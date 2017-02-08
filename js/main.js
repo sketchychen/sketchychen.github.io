@@ -17,7 +17,7 @@ $(document).ready(function () {
     $(".navbar-button").each(function() {
       var button = this;
       button.addEventListener("click", function() {
-        var elementID = '#' + this.innerText;
+        var elementID = '#' + this.innerText.toLowerCase();
         // console.log(elementID);
         scrollTo(elementID);
       })

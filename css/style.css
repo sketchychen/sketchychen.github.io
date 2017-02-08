@@ -178,7 +178,7 @@ a {
 #nav {
   position: absolute;
   top: 80%;
-  height: 3em;
+  /*height: 3em;*/
   width: 100%;
   z-index: 99;
 }
@@ -192,6 +192,7 @@ a {
 .navbar {
   /*position: static;*/
   width: 100%;
+  height: 3em;
 }
 
 .navbar-docked {
@@ -201,7 +202,8 @@ a {
 }
 
 .navbar-list {
-  padding-left: 0;
+  margin: 0;
+  height: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -210,13 +212,21 @@ a {
 
 .navbar-item {
   position: relative;
-  float: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.navbar-link {
+.navbar-button {
+  background: none;
+  border: none;
   text-transform: uppercase;
   font-family: 'Josefin Slab', serif;
   color: white;
+}
+
+.navbar-button:focus {
+  outline: none;
 }
 
 .navbar-link.active {
