@@ -24,16 +24,14 @@ body {
   top: 80%;
   height: 3em;
   width: 100%;
-  display: block;
   z-index: 99;
   background-color: silver;
 }
 
 .nav-spacer-row {
-  display: block;
   background-color: rgba(0, 200, 0, 0.5);
   width: 100%;
-  height: 3em;
+  height: 3.5em;
 }
 
 .navbar {
@@ -64,21 +62,28 @@ body {
   color: #33C3F0;
 }
 
-.section-row {
-  /*width: 100%;*/
-  margin: 0 5%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .section-wrapper {
   position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
   flex-flow: column;
+}
+
+.section-row {
+  margin: 2%;
+  height: 96%;
+  display: flex;
+}
+
+.section-content {
+  width: 60%;
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.section-image {
+  width: 40%;
+  background-color: rgba(0, 255, 255, 0.5);
 }
 
 #header {
