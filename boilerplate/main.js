@@ -5,7 +5,7 @@ $(document).ready(function () {
         var totalH = $('#nav').offset().top;
         var finalSize = totalH - vPos;
 
-        // console.log(finalSize);
+        console.log(finalSize);
 
         if (finalSize <= 0) {
             $('.navbar').css({
@@ -19,17 +19,11 @@ $(document).ready(function () {
         }
     });
 
-    // $(".navbar-link").forEach(function(element) {
-    //   element.on("click", function(event) {
-    //     scrollTo(event.target.attr("href"));
-    //   })
-    // })
-    //
-    // function scrollTo(elementId) {
-    //     $('html, body').animate({
-    //         scrollTop: $(elementId).offset().top
-    //     }, 1000);
-    // }
+    function scrollTo(elementId) {
+        $('html, body').animate({
+            scrollTop: $(elementId).offset().top
+        }, 1000);
+    }
 
 
 });
