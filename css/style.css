@@ -9,6 +9,8 @@ html {
 
 body {
   background-color: rgba(0, 0, 0, 0.5);
+  /*font-family: 'Josefin Slab', serif;*/
+  font-family: 'Amatic SC', cursive;
 }
 
 .container {
