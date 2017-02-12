@@ -63,14 +63,10 @@ a {
     top: 0;
     left: 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,283156+76,000000+100 */
-    background: rgb(0, 0, 0);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(40, 49, 86, 1) 69%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(40, 49, 86, 1) 69%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(40, 49, 86, 1) 69%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: rgb(0, 0, 0); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(40, 49, 86, 1) 69%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(40, 49, 86, 1) 69%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(40, 49, 86, 1) 69%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 #home .section-content {
@@ -95,11 +91,11 @@ a {
 
 #home .overlay-layer>svg {
     width: 100%;
-    transform: scale(1, 1);
+    transform: scale(0.7, 0.7);
     z-index: -1;
 }
 
-#home svg polygon {
+#home svg>polygon {
     fill: #e18728;
 }
 
@@ -108,18 +104,16 @@ a {
 }
 
 .home-banner {
-    /*font-family: 'Josefin Slab', serif;*/
-    margin: 0 auto;
-    font-family: 'Amatic SC', cursive;
-    -ms-transform: skewY(-10deg);
-    /* IE 9 */
-    -webkit-transform: skewY(-10deg);
-    /* Safari */
+    position: relative;
+    font-family: 'Josefin Slab', serif;
+    /*font-family: 'Amatic SC', cursive;*/
+    /*margin: 0 auto;*/
+    /*padding: 0;*/
+    -ms-transform: skewY(-10deg); /* IE 9 */
+    -webkit-transform: skewY(-10deg); /* Safari */
     transform: skewY(-10deg);
     box-shadow: 0 0 4px rgba(34, 25, 25, 0.7);
-    padding: 0px 0;
     /*background-color: rgb(209, 154, 60);*/
-    position: relative;
 }
 
 .home-banner-overlay {
@@ -128,12 +122,12 @@ a {
     height: 100%;
     top: 0;
     left: 0;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(left,
+        rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,
+        rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(left,
+        rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .home-banner p {
@@ -152,20 +146,20 @@ a {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,2256aa+50,000000+100 */
     background: rgb(0, 0, 0);
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(45deg,
+        rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,
+        rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,
+        rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .home-text h1 {
     /*text-shadow: 4px 4px rgba(34, 25, 25, 0.4);*/
     font-size: 50px;
-    margin: 0 0 -10px;
+    margin: 5px 0 -10px;
     color: rgb(209, 154, 60);
-    transform: scale(1, 1.25);
+    transform: scale(1, 1.55);
 }
 
 /* PROJECTS SECTION */
@@ -225,7 +219,6 @@ a {
 #nav {
     position: absolute;
     top: 80%;
-    /*height: 3em;*/
     width: 100%;
     z-index: 99;
 }
@@ -237,13 +230,19 @@ a {
 }
 
 .navbar {
-    /*position: static;*/
-    width: 100%;
+    position: static;
     height: 3em;
+    /*width: 90%;
+    margin: 0 5%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;*/
+    width: 100%;
 }
 
 .navbar-docked {
     position: fixed;
+    width: 100%;
+    /*margin: 0;*/
     top: 0;
     background: rgba(40, 49, 86, 1);
 }
@@ -380,3 +379,27 @@ a {
 @keyframes Spin {
     100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
 }
+
+/*.scale-once {
+    float: left;
+    -webkit-animation-name: Scale;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: Scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:1;
+    -moz-animation-timing-function:ease-in-out;
+}
+
+@-webkit-keyframes Scale {
+    from {-webkit-transform: scale(0.9);}
+    65% {-webkit-transform: scale(1.0);}
+    to {-webkit-transform: scale(0.9);}
+}
+
+@-moz-keyframes Scale{
+    from {-moz-transform: scale(0.9);}
+    65% {-moz-transform: scale(1.0);}
+    to {-moz-transform: scale(0.9);}
+}*/
