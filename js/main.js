@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var navTop = $('#nav').offset().top;
   var sections = []
+  var windowTop = $(window).scrollTop();
   $("section").each(function() {
     // console.log($(this).attr('id'), $(this).offset().top)
     sections.push({id: "#" + $(this).attr('id'), top: $(this).offset().top})
@@ -9,10 +10,8 @@ $(document).ready(function () {
   console.log(sections);
 
     $(window).bind('scroll', function () {
-        var windowTop = $(window).scrollTop();
+        windowTop = $(window).scrollTop();
         var navWindowTop = navTop - windowTop;
-        // console.log(navWindowTop);
-        // console.log(projectsTop-windowTop);
 
         if (navWindowTop <= 0) {
             $('.navbar').addClass('navbar-docked');
@@ -20,7 +19,14 @@ $(document).ready(function () {
             $('.navbar').removeClass('navbar-docked');
         }
 
-        if (windowTop >= sections[0].top && windowTop < sections[1].top) {}
+        for (var i=1; i<sections.length; i++) {
+          if (windowTop >= sections[i-1].top && windowTop < sections[i].top) {
+            console.log($(".navbar-item")[i-1])
+          }
+        }
+        if (windowTop >= sections[sections.length-1].top) {
+          console.log($(".navbar-item")[sections.length-1])
+        }
 
     });
 
