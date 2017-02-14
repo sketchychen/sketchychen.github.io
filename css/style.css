@@ -258,6 +258,18 @@ a {
   font-family: 'Roboto Mono', monospace;
 }
 
+.icon-custom {
+  width: 40px;
+  height: 20px;
+  /*padding: 0;
+  margin: 0;*/
+}
+
+.icon-cardboard {
+  background: url('../img/cardboard-black.png') no-repeat center;
+  background-size: contain;
+}
+
 /* ABOUT SECTION */
 #about {
     /*background-color: rgba(150, 0, 0, 0.5);*/
