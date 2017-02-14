@@ -272,6 +272,8 @@ a {
   padding: 5%;
   opacity: 0;
   transition: opacity 0.2s linear;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .thumbnail-16-9:hover .thumbnail-16-9-overlay {
