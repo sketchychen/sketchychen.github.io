@@ -51,7 +51,8 @@ a {
   }
 
   .projects {
-      width: 100%;
+      /*width: 100%;*/
+      height: 100%;
       display: flex;
       flex-flow: row;
       justify-content: center;
@@ -61,7 +62,7 @@ a {
 
   .thumbnail-16-9 {
       display: inline-block;
-      width: 90%;
+      width: 50%;
       position: relative;
       margin: 0.5%;
   }
@@ -264,6 +265,12 @@ a {
   justify-content: center;
   align-items: center;
   padding: 5%;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.thumbnail-16-9:hover .thumbnail-16-9-overlay {
+  opacity: 1;
 }
 
 .thumbnail-16-9-overlay h4 {
@@ -507,3 +514,10 @@ a {
     65% {-moz-transform: scale(1.0);}
     to {-moz-transform: scale(0.9);}
 }*/
+
+.footer-grow:hover {
+  -webkit-transition: transform 0.3s ease-in-out;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
