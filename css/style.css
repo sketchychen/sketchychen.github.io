@@ -9,7 +9,8 @@ html {
 
 body {
     background-color: rgba(255, 255, 255, 1);
-    font-family: 'Amatic SC', cursive;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 20px;
 }
 
@@ -45,6 +46,22 @@ a {
       height: 40%;
       /*background-color: rgba(0, 255, 255, 0.5);*/
   }
+
+  .projects {
+      width: 100%;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .thumbnail-16-9 {
+      display: inline-block;
+      width: 40%;
+      position: relative;
+      margin: 1%;
+  }
+
 }
 
 @media all and (orientation:landscape) {
@@ -64,6 +81,21 @@ a {
       height: 100%;
       /*background-color: rgba(0, 255, 255, 0.5);*/
   }
+
+  .projects {
+      width: 100%;
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-around;
+  }
+
+  .thumbnail-16-9 {
+      display: inline-block;
+      width: 25%;
+      position: relative;
+      margin: 1%;
+  }
+
 }
 
 .section-wrapper {
@@ -197,18 +229,8 @@ a {
     left: 0;
 }
 
-.projects {
-    width: 100%;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-around;
-}
-
-.thumbnail-16-9 {
-    display: inline-block;
-    width: 45%;
-    position: relative;
-    margin: 1%;
+#projects .section-content {
+  width: 100%;
 }
 
 .thumbnail-16-9:after {
@@ -220,6 +242,21 @@ a {
     box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
 }
 
+.thumbnail-16-9-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-icons {
+  font-family: 'Roboto Mono', monospace;
+}
 
 /* ABOUT SECTION */
 #about {
