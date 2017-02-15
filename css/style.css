@@ -316,6 +316,10 @@ a:link, a:visited {
     text-indent: 0.25rem;
 }
 
+.thumbnail-16-9-overlay h4:hover {
+  padding-bottom: 0.5em;
+}
+
 .tech-icons {
     text-align: center;
     font-family: monospace;
