@@ -245,6 +245,11 @@ a {
   width: 100%;
 }
 
+#thumbnail-lasersimulator {
+  background: url('../img/portfolio/laser-simulator.gif') no-repeat center;
+  background-size: cover;
+}
+
 #thumbnail-duckface {
   background: url('../img/portfolio/duckface.png') no-repeat center;
   background-size: cover;
