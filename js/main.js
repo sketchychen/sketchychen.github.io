@@ -46,5 +46,11 @@ $(document).ready(function () {
         }, 1000);
     }
 
+    var angle = 15;
+    var faceInterval = setInterval(function(){
+      angle *= -1;
+      $("#about-image").css({transform: "rotate("+ angle +"deg)"});
+    }, 1000)
+
 
 });
