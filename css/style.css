@@ -33,6 +33,12 @@ a:link, a:visited {
     overflow-y: auto;
 }
 
+@media screen and (max-width:500px) {
+  #home overlay-stack {
+    transform: scale(0.5, 0.5);
+  }
+}
+
 @media screen and (orientation:portrait) {
     .section-row {
         flex-flow: column;
@@ -144,8 +150,9 @@ a:link, a:visited {
 #home .section-content {
     margin-bottom: 3rem;
     /*background: radial-gradient(circle, #8486a5, #22294f, #111111, #111111);*/
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 40%);
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%);
     position: relative;
+    display: flex;
 }
 
 #home-image {
@@ -242,7 +249,7 @@ a:link, a:visited {
 .home-text h1 {
     /*text-shadow: 4px 4px rgba(34, 25, 25, 0.4);*/
     font-size: 2em;
-    margin: 5px 0 -10px;
+    margin: 5px 0 -5px;
     color: rgb(209, 154, 60);
     transform: scale(1, 1.55);
 }
@@ -317,7 +324,7 @@ a:link, a:visited {
 }
 
 .thumbnail-16-9-overlay h4:hover {
-  padding-bottom: 0.5em;
+    text-decoration: underline;
 }
 
 .tech-icons {
@@ -472,10 +479,9 @@ a:link, a:visited {
     outline: none;
 }
 
-.navbar-link.active {
-    color: #33C3F0;
+.navbar-current {
+    background-color: rgba(255, 255, 255, 0.25);
 }
-
 
 /* ANIMATED EFFECTS */
 
@@ -636,10 +642,3 @@ a:link, a:visited {
     65% {-moz-transform: scale(1.0);}
     to {-moz-transform: scale(0.9);}
 }*/
-
-.footer-grow:hover {
-    -webkit-transition: transform 0.3s ease-in-out;
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-}
