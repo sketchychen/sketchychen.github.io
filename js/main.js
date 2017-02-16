@@ -3,11 +3,8 @@ $(document).ready(function () {
   var sections = []
   var windowTop = $(window).scrollTop();
   $("section").each(function() {
-    // console.log($(this).attr('id'), $(this).offset().top)
     sections.push({id: "#" + $(this).attr('id'), top: $(this).offset().top})
   });
-
-  console.log(sections);
 
     $(window).bind('scroll', function () {
         windowTop = $(window).scrollTop();
