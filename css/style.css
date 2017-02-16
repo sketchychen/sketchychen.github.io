@@ -34,7 +34,7 @@ a:link, a:visited {
 }
 
 @media screen and (max-width:500px) {
-  #home overlay-stack {
+  #home ack {
     transform: scale(0.5, 0.5);
   }
 }
@@ -175,6 +175,14 @@ a:link, a:visited {
     content: '';
 }
 
+#home .overlay-stack .nameplate {
+    position absolute;
+    top: 25%;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    z-index: 2;
+}
+
 .overlay-stack .overlay-layer {
     position: absolute;
 }
@@ -193,22 +201,29 @@ a:link, a:visited {
     align-self: center;
 }
 
+#banner {
+  width: 400px;
+}
+
 .home-banner {
     position: relative;
     font-family: 'Josefin Slab', serif;
     /*font-family: 'Shadows Into Light', cursive;*/
+    -ms-transform: skewY(-10deg); /* IE 9 */
+    -webkit-transform: skewY(-10deg); /* Safari */
+    transform: skewY(-10deg);
     /*margin: 0 auto;*/
     /*padding: 0;*/
-    -ms-transform: skewY(-10deg);
-    /* IE 9 */
-    -webkit-transform: skewY(-10deg);
-    /* Safari */
-    transform: skewY(-10deg);
-    box-shadow: 0 0 4px rgba(34, 25, 25, 0.7);
+    /*box-shadow: 0 0 4px rgba(34, 25, 25, 0.7);*/
     /*background-color: rgb(209, 154, 60);*/
+    width: 100%;
+    /*display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;*/
 }
 
-.home-banner-overlay {
+/*.home-banner-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -220,21 +235,21 @@ a:link, a:visited {
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
+}*/
 
 .home-banner p {
     text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
     font-weight: bold;
     font-size: 1em;
     position: absolute;
-    top: -38px;
-    left: 20px;
+    margin: 0;
+    /*top: -38px;*/
+    /*left: 20px;*/
 }
 
-.home-text {
+.banner-text {
     box-shadow: 0 0 4px rgba(34, 25, 25, 0.7);
     padding: 10px 5px;
-    /*background-color: rgb(34, 86, 170);*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,2256aa+50,000000+100 */
     background: rgb(0, 0, 0);
     /* Old browsers */
@@ -244,14 +259,35 @@ a:link, a:visited {
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin: 2px 0;
 }
 
-.home-text h1 {
+.banner-text h1 {
+  color: rgb(209, 154, 60);
+  transform: scale(1, 1.55);
+}
+
+#banner-text-top {
+  float: left;
+}
+
+#banner-text-bottom {
+  float: right;
+}
+
+#banner-text-top h1 {
+  font-size: 1.5rem;
+  margin: 5px auto -5px;
+  /*color: rgb(209, 154, 60);*/
+  /*transform: scale(1, 1.55);*/
+}
+
+#banner-text-bottom h1 {
     /*text-shadow: 4px 4px rgba(34, 25, 25, 0.4);*/
-    font-size: 2em;
-    margin: 5px 0 -5px;
-    color: rgb(209, 154, 60);
-    transform: scale(1, 1.55);
+    font-size: 2rem;
+    margin: 5px auto -5px;
+    /*color: rgb(209, 154, 60);*/
+    /*transform: scale(1, 1.55);*/
 }
 
 
@@ -381,6 +417,11 @@ a:link, a:visited {
     /*font-size: 30px;*/
 }
 
+#about .section-content p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 #about-image {
     width: 50%;
     height: 50%;
@@ -469,10 +510,6 @@ a:link, a:visited {
 
 .navbar-button:hover {
     padding-bottom: 0.5em;
-}
-
-.navbar-button:active {
-    padding-top: 0.6em;
 }
 
 .navbar-button:focus {

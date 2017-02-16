@@ -19,24 +19,20 @@ $(document).ready(function () {
             $('.navbar').removeClass('navbar-docked');
         }
 
-        for (var i=2; i<sections.length; i++) {
-          if (windowTop >= sections[i-1].top && windowTop < sections[i].top) {
-            $(".navbar-button:eq("+(i-1)+")").addClass('navbar-current');
+        for (var i=1; i<sections.length; i++) {
+          if (i !== sections.length-1) {
+            if (windowTop > (sections[i-1].top + 2*sections[i].top)/3 && windowTop <= (sections[i].top + 2*sections[i+1].top)/3) {
+              $(".navbar-button:eq("+(i)+")").addClass('navbar-current');
+            } else {
+              $(".navbar-button:eq("+(i)+")").removeClass('navbar-current');
+            }
           } else {
-            $(".navbar-button:eq("+(i-1)+")").removeClass('navbar-current');
+            if (windowTop > (sections[i-1].top + 2*sections[i].top)/3) {
+              $(".navbar-button:eq("+(i)+")").addClass('navbar-current');
+            } else {
+              $(".navbar-button:eq("+(i)+")").removeClass('navbar-current');
+            }
           }
-
-          // if (windowTop === sections[i].top){
-          //   console.log($(".navbar-item")[i])
-          //   $(".navbar-button:eq("+i+")").addClass('navbar-current');
-          // } else if (windowTop !== sections[i].top) {
-          //   $(".navbar-button:eq("+i+")").removeClass('navbar-current');
-          // }
-        }
-        if (windowTop >= sections[sections.length-1].top) {
-          $(".navbar-button:eq("+(i-1)+")").addClass('navbar-current');
-        } else {
-          $(".navbar-button:eq("+(i-1)+")").removeClass('navbar-current');
         }
 
     });
