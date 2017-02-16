@@ -203,6 +203,7 @@ a:link, a:visited {
 
 #banner {
   width: 400px;
+  /*transform: scale();*/ /* this preserves the position relationships of children elements */
 }
 
 .home-banner {
