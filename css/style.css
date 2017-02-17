@@ -187,7 +187,7 @@ a:link, a:visited {
 }
 
 #home svg>polygon {
-    fill: #e18728;
+    fill: rgba(225, 135, 40, 0.7);
 }
 
 #home .overlay-layer>.home-banner {
@@ -228,13 +228,13 @@ a:link, a:visited {
 }*/
 
 .banner-text {
-    box-shadow: 0 0 4px rgba(34, 25, 25, 0.7);
     padding: 10px 5px;
+    /*box-shadow: 0 0 4px rgba(34, 25, 25, 0.7);*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,2256aa+50,000000+100 */
-    background: rgb(34, 86, 170); /* Old browsers */
-    background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(34, 86, 170, 1) 50%, rgba(0, 0, 0, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*background: rgb(34, 86, 170); /* Old browsers */*/
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 40%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 40%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     margin: 2px 0;
 }
 
@@ -242,6 +242,9 @@ a:link, a:visited {
   /*color: rgba(209, 154, 60, 0.75);*/
   color: rgba(255, 240, 200, 0.7);
   transform: scale(1, 1.2);
+  font-weight: 900;
+  text-shadow: 2px 2px rgba(34, 25, 25, 0.8);
+
   /*font-style: italic;*/
 }
 
