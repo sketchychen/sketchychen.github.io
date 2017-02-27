@@ -1,0 +1,11 @@
+/* RESUME SECTION */
+
+#résumé .section-row {
+  background-color: rgba(236, 237, 241, 1);
+  /*top: 100%;*/
+  /*left: 0;*/
+}
+
+#résumé .section-content {
+  font-size: 40px;
+}

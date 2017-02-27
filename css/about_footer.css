@@ -1,0 +1,28 @@
+/* ABOUT SECTION */
+
+#about .section-row {
+  background-color: rgba(236, 237, 241, 1);
+  /*top: 300%;
+  left: 0;*/
+  /*font-size: 30px;*/
+}
+
+#about .section-content p {
+  /*margin-left: 5%;
+  margin-right: 5%;*/
+}
+
+#about-image {
+  width: 50%;
+  height: 50%;
+  background: url('../img/pixel-me-head-large.png') no-repeat center;
+  background-size: contain;
+}
+
+footer {
+  height: 200px;
+  /*background-color: rgba(100, 0, 100, 0.5);*/
+  background-color: #272D37;
+  padding: 40px;
+  color: #919BAC;
+}

@@ -97,10 +97,17 @@ body {
   left: 0;
 }
 
+#resume {
+  background-color: rgba(200, 0, 0, 0.5);
+  top: 100%;
+  left: 0;
+}
+
+
 /* PROJECTS SECTION */
 #projects {
   background-color: rgba(100, 0, 0, 0.5);
-  top: 100%;
+  top: 200%;
   left: 0;
 }
 
@@ -124,13 +131,6 @@ body {
 /* ABOUT SECTION */
 #about {
   background-color: rgba(150, 0, 0, 0.5);
-  top:200%;
-  left: 0;
-}
-
-/* CONTACT SECTION */
-#contact {
-  background-color: rgba(200, 0, 0, 0.5);
   top: 300%;
   left: 0;
 }

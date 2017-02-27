@@ -44,9 +44,9 @@ $(document).ready(function () {
     })
 
     function scrollTo(elementID) {
-      // console.log(elementID);
+      console.log(elementID);
         $('html, body').animate({
-            scrollTop: $(elementID).offset().top
+            scrollTop: $(elementID).offset().top - $('.navbar').height()
         }, 1000);
     }
 
