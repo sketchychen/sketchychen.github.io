@@ -4,8 +4,16 @@
   background-color: rgba(236, 237, 241, 1);
   /*top: 100%;*/
   /*left: 0;*/
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 #résumé .section-content {
   font-size: 40px;
+}
+
+iframe {
+  border: none;
+  /*width: 100%;*/
 }

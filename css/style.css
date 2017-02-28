@@ -10,9 +10,10 @@ html {
 body {
   /*background-color: rgba(255, 255, 255, 1);*/
   background-color: #F4F5F7;
-  font-family: 'Shadows Into Light', cursive;
-  letter-spacing: 0.2rem;
-  text-indent: 0.2rem;
+  /*font-family: 'Shadows Into Light', cursive;*/
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.1rem;
+  text-indent: 0.1rem;
   /*font-size: 20px;*/
 }
 
@@ -65,9 +66,14 @@ a:link, a:visited {
     height: 40%;
   }
 
+  #home .section-image {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
 
   #home .section-content {
-
     height: 50%;
   }
 
@@ -148,7 +154,7 @@ a:link, a:visited {
 
 .section-row {
   /*background-color: rgba(0, 50, 0, 0.5);*/
-  padding: 7% 7%;
+  padding: 5% 7%;
   /*height: 96%;*/
 }
 

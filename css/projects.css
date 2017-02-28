@@ -17,11 +17,11 @@
   letter-spacing: 0.25rem;
   text-indent: 0.25rem;
   font-weight: 900;
-  margin: 0;
+  margin: 10px auto;
 }
 
 #projects .section-content p {
-  margin: 2px auto;
+  margin: 10px auto;
 }
 
 #projects .section-content .projects {

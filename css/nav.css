@@ -52,12 +52,11 @@
   background: none;
   border: none;
   height: 100%;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
   letter-spacing: 0.2rem;
   text-indent: 0.2rem;
   text-transform: uppercase;
-  font-weight: bold;
   color: white;
   padding: 0 1rem;
 }
