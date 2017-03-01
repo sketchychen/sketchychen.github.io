@@ -145,3 +145,30 @@
   /*color: rgb(209, 154, 60);*/
   /*transform: scale(1, 1.55);*/
 }
+
+
+@media screen and (orientation:portrait) {
+  #home .section-image {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home .section-content {
+    height: 50%;
+  }
+}
+
+@media screen and (orientation:landscape) {
+  #home .section-image {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #home .section-content {
+    /*margin-bottom: 3rem;*/
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 40%);
+    position: relative;
+    width: 50%;
+  }
+}
