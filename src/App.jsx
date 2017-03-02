@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './index.css';
 
 import Home from './home.jsx';
 import Resume from './resume.jsx';
