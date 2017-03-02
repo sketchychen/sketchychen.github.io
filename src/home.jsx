@@ -31,7 +31,7 @@ class Home extends Component {
               <div className="overlay-layer" id="banner">
                 <div className="home-banner floating-home-banner">
                   <div id="banner-text-top" className="banner-text">
-                    <h1>RACHEL CHEN</h1>
+                    <h1>RACHEL S. CHEN</h1>
                   </div>
                   <div id="banner-text-bottom" className="banner-text">
                     <h1>WEB DEVELOPER!</h1>
