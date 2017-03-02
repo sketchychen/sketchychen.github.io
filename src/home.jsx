@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './home.css';
 import './nav.css';
 
-import $ from 'jquery';
-
 class Home extends Component {
   render() {
     return (

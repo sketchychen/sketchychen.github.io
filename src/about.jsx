@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './about.css';
 
-import $ from 'jquery';
-
 class About extends Component {
   render() {
     return (
