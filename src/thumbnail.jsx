@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './thumbnail.css';
+// import './technology-icons.css';
 
 class Thumbnail extends Component {
   constructor(props) {
@@ -31,7 +32,13 @@ class Thumbnail extends Component {
             <h4>{this.props.name}</h4>
           </a>
           <p className="tech-icons">
+            <a target="_blank" href={this.props.github}>
+              <span className="icon-github-circle" title="Git with GitHub"></span>
+            </a>
             {this.techIcons()}
+          </p>
+          <p className="thumbnail-desc">
+            {this.props.desc}
           </p>
         </div>
       </div>

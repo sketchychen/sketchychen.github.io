@@ -13,6 +13,7 @@ class Projects extends Component {
           img: "../public/img/portfolio/laser-simulator.gif",
           thumb: "thumbnail-lasersimulator",
           github: "https://github.com/skylocke/laser-eye-beam-simulator",
+          url: "http://rschen.co/laser-eye-beam-simulator/",
           tech: ["HTML5", "CSS3", "JavaScript", "A-Frame VR"],
           desc: "helping you pretend you have laser eyes, provided you have either a computer or a smart phone"
         },
@@ -20,6 +21,7 @@ class Projects extends Component {
           name: "Duckface",
           img: "../public/img/portfolio/duckface.png",
           thumb: "thumbnail-duckface",
+          url: "http://duckface.herokuapp.com/",
           github: "https://github.com/skylocke/duck-face",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
                 "PostgreSQL", "Heroku"],
@@ -29,15 +31,17 @@ class Projects extends Component {
           name: "8-Bit Chat",
           img: "../public/img/portfolio/8-bit-chat.gif",
           thumb: "thumbnail-8bitchat",
+          url: "http://eightbitchat.herokuapp.com/",
           github: "https://github.com/skylocke/8-bit-chat",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku", "Adobe Photoshop"],
-          desc: "talk to other fellow blocky folks in this 8-bit-styled avatar chat room"
+          desc: "talk to other fellow rectangles in this 8-bit-styled avatar chat room"
         },
         {
           name: "Taste Saver",
           img: "../public/img/portfolio/taste-saver.png",
           thumb: "thumbnail-tastesaver",
+          url: "",
           github: "https://github.com/Skylocke/picky-eater-hackathon",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku"],
@@ -47,6 +51,7 @@ class Projects extends Component {
           name: "Gube Roldberg",
           img: "thumbnail-guberoldberg",
           thumb: "thumbnail-guberoldberg",
+          url: "http://guberoldberg.herokuapp.com/",
           github: "https://github.com/Skylocke/gube-roldberg",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku"],
@@ -76,7 +81,7 @@ class Projects extends Component {
   thumbnails() {
     return this.state.projects.map((project, index) => {
       return <Thumbnail key={project.name} id={index} name={project.name}
-                        img={project.img} thumb={project.thumb}
+                        img={project.img} thumb={project.thumb} href={project.url}
                         github={project.github} tech={project.tech} desc={project.desc} />
     });
   }
