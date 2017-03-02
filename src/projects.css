@@ -7,7 +7,7 @@
 }
 
 #projects .section-content {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   text-transform: uppercase;
   align-content: center;
@@ -25,94 +25,9 @@
 }
 
 #projects .section-content .projects {
-  margin: 0 auto;
-}
-
-.thumbnail-16-9:after {
-  /* 16:9 ratio */
-  padding-top: 56.25%;
-  display: block;
-  content: '';
-  /*background-color: rgba(100, 200, 100, 0.5);*/
-  box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
-}
-
-.thumbnail-16-9-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90.2%;
-  height: 82.5%;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  opacity: 0;
-  transition: opacity 0.2s linear;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-}
-
-.thumbnail-16-9:hover .thumbnail-16-9-overlay {
-  opacity: 1;
-}
-
-.thumbnail-16-9-overlay h4 {
-  margin: 0;
-  font-size: 80%;
-  text-align: center;
-  letter-spacing: 0.25rem;
-  text-indent: 0.25rem;
-}
-
-.thumbnail-16-9-overlay h4:hover {
-  text-decoration: underline;
-}
-
-.tech-icons {
-  text-align: center;
-  font-family: monospace;
-  font-size: 16px;
-  letter-spacing: 0.1rem;
-  height: auto;
-}
-
-.icon-custom {
-  width: 16px;
-  height: 16px;
-  /*padding: 0;
-  margin: 0;*/
-}
-
-.icon-cardboard-black {
-  background: url('../public/img/cardboard-black.png') no-repeat center;
-  background-size: contain;
-}
-
-.icon-cardboard-white {
-  background: url('../public/img/cardboard-white.png') no-repeat center;
-  background-size: contain;
-}
-
-#thumbnail-lasersimulator {
-  background: url('../public/img/portfolio/laser-simulator.gif') no-repeat center;
-  background-size: cover;
-}
-
-#thumbnail-duckface {
-  background: url('../public/img/portfolio/duckface.png') no-repeat center;
-  background-size: cover;
-}
-
-#thumbnail-8bitchat {
-  background: url('../public/img/portfolio/8-bit-chat.gif') no-repeat center;
-  background-size: cover;
-}
-
-#thumbnail-tastesaver {
-  background: url('../public/img/portfolio/taste-saver.png') no-repeat center;
-  background-size: cover;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 
@@ -134,12 +49,6 @@
   #projects h1 {
     font-size: 24px;
   }
-  .thumbnail-16-9 {
-    display: inline-block;
-    width: 45%;
-    position: relative;
-    margin: 2.5%;
-  }
 }
 
 @media screen and (orientation:landscape) {
@@ -149,12 +58,5 @@
     /*display: flex;
         flex-flow: wrap row;
         justify-content: flex-start;*/
-  }
-  .thumbnail-16-9 {
-    display: inline-block;
-    width: 23%;
-    position: relative;
-    margin: 1%;
-    float: left;
   }
 }

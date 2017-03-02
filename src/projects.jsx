@@ -1,203 +1,86 @@
 import React, { Component } from 'react';
 import './projects.css';
 
+import Thumbnail from './thumbnail.jsx';
+
 class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      projects: [
+        {
+          name: "Laser Eye Beam Simulator",
+          img: "../public/img/portfolio/laser-simulator.gif",
+          thumb: "thumbnail-lasersimulator",
+          github: "https://github.com/skylocke/laser-eye-beam-simulator",
+          tech: ["HTML5", "CSS3", "JavaScript", "A-Frame VR"],
+          desc: "helping you pretend you have laser eyes, provided you have either a computer or a smart phone"
+        },
+        {
+          name: "Duckface",
+          img: "../public/img/portfolio/duckface.png",
+          thumb: "thumbnail-duckface",
+          github: "https://github.com/skylocke/duck-face",
+          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
+                "PostgreSQL", "Heroku"],
+          desc: "bringing duckface back by auto-superimposing duck beaks over faces in your photos for you"
+        },
+        {
+          name: "8-Bit Chat",
+          img: "../public/img/portfolio/8-bit-chat.gif",
+          thumb: "thumbnail-8bitchat",
+          github: "https://github.com/skylocke/8-bit-chat",
+          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
+                "AngularJS", "MongoDB", "Heroku", "Adobe Photoshop"],
+          desc: "talk to other fellow blocky folks in this 8-bit-styled avatar chat room"
+        },
+        {
+          name: "Taste Saver",
+          img: "../public/img/portfolio/taste-saver.png",
+          thumb: "thumbnail-tastesaver",
+          github: "https://github.com/Skylocke/picky-eater-hackathon",
+          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
+                "AngularJS", "MongoDB", "Heroku"],
+          desc: ""
+        },
+        {
+          name: "Gube Roldberg",
+          img: "thumbnail-guberoldberg",
+          thumb: "thumbnail-guberoldberg",
+          github: "https://github.com/Skylocke/gube-roldberg",
+          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
+                "AngularJS", "MongoDB", "Heroku"],
+          desc: "make simple rube-goldberg-esque contraptions with the gube-roldberg interface"
+        },
+      ]
+    };
+
+  }
+
   render() {
     return (
       <section className="section-wrapper" id="projects">
       <div className="section-row">
         <div className="section-content">
           <h1>Here are some things.</h1>
-          <div className="projects">
-
-            <div className="thumbnail-16-9" id="thumbnail-lasersimulator">
-
-              <div className="thumbnail-16-9-overlay">
-                <a target="_blank" href="https://skylocke.github.io/laser-eye-beam-simulator/">
-                  <h4>Laser Eye Beam Simulator</h4>
-                </a>
-                <p className="tech-icons">
-                  <a target="_blank" href="https://github.com/skylocke/laser-eye-beam-simulator">
-                    <span className="icon-github-circle" title="Git with GitHub"></span>
-                  </a>
-                  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
-                    <span className="icon-html5" title="HTML5"></span>
-                  </a>
-                  <a target="_blank" href="https://www.w3schools.com/css/css3_intro.asp">
-                    <span className="icon-css3" title="CSS3"></span>
-                  </a>
-                  <a target="_blank" href="https://www.javascript.com/">
-                    <span className="icon-js" title="JavaScript"></span>
-                  </a>
-                  <a target="_blank" href="https://aframe.io/">
-                    <span className="icon-custom icon-cardboard-white" title="Google Cardboard and A-Frame VR">&nbsp;&nbsp;</span>
-                  </a>
-                </p>
-              </div>
-
-            </div>
-
-
-            <div className="thumbnail-16-9" id="thumbnail-duckface">
-
-              <div className="thumbnail-16-9-overlay">
-                <a target="_blank" href="http://duckface.herokuapp.com/">
-                  <h4>Duckface</h4>
-                </a>
-                <p className="tech-icons">
-                  <a target="_blank" href="https://github.com/skylocke/duck-face">
-                    <span className="icon-github-circle" title="Git with GitHub"></span>
-                  </a>
-                  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
-                    <span className="icon-html5" title="HTML5"></span>
-                  </a>
-                  <a target="_blank" href="https://www.w3schools.com/css/css3_intro.asp">
-                    <span className="icon-css3" title="CSS3"></span>
-                  </a>
-                  <a target="_blank" href="http://getbootstrap.com/">
-                    <span className="icon-bootstrap" title="Bootstrap"></span>
-                  </a>
-                  <a target="_blank" href="https://www.javascript.com/">
-                    <span className="icon-js" title="JavaScript"></span>
-                  </a>
-                  <a target="_blank" href="https://jquery.com/">
-                    <span className="icon-jquery" title="JQuery"></span>
-                  </a>
-                  <a target="_blank" href="https://nodejs.org/">
-                    <span className="icon-nodejs" title="Node.js"></span>
-                  </a>
-                  <a target="_blank" href="https://www.postgresql.org/">
-                    <span className="icon-postgres" title="PostgreSQL"></span>
-                  </a>
-                  <a target="_blank" href="https://www.heroku.com/">
-                    <span className="icon-heroku" title="Heroku"></span>
-                  </a>
-                </p>
-              </div>
-
-            </div>
-
-
-            <div className="thumbnail-16-9" id="thumbnail-8bitchat">
-
-              <div className="thumbnail-16-9-overlay">
-                <a target="_blank" href="http://eightbitchat.herokuapp.com/">
-                  <h4>8-Bit Chat</h4>
-                </a>
-                <p className="tech-icons">
-                  <a target="_blank" href="https://github.com/Skylocke/8-bit-chat">
-                    <span className="icon-github-circle" title="Git with GitHub"></span>
-                  </a>
-                  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
-                    <span className="icon-html5" title="HTML5"></span>
-                  </a>
-                  <a target="_blank" href="https://www.w3schools.com/css/css3_intro.asp">
-                    <span className="icon-css3" title="CSS3"></span>
-                  </a>
-                  <a target="_blank" href="http://getbootstrap.com/">
-                    <span className="icon-bootstrap" title="Bootstrap"></span>
-                  </a>
-                  <a target="_blank" href="https://www.javascript.com/">
-                    <span className="icon-js" title="JavaScript"></span>
-                  </a>
-                  <a target="_blank" href="https://nodejs.org/">
-                    <span className="icon-nodejs" title="Node.js"></span>
-                  </a>
-                  <a target="_blank" href="https://angularjs.org/">
-                    <span className="icon-angular" title="AngularJS"></span>
-                  </a>
-                  <a target="_blank" href="https://www.mongodb.com/">
-                    <span className="icon-mongodb" title="MongoDB"></span>
-                  </a>
-                  <a target="_blank" href="https://www.heroku.com/">
-                    <span className="icon-heroku" title="Heroku"></span>
-                  </a>
-                  <a target="_blank" href="https://www.adobe.com/products/photoshop.html">
-                    <span className="icon-photoshop" title="Adobe Photoshop"></span>
-                  </a>
-                </p>
-              </div>
-
-            </div>
-
-
-            <div className="thumbnail-16-9" id="thumbnail-tastesaver">
-
-              <div className="thumbnail-16-9-overlay">
-                <a target="_blank" href="">
-                  <h4>Taste Saver</h4>
-                </a>
-                <p className="tech-icons">
-                  <a target="_blank" href="https://github.com/Skylocke/picky-eater-hackathon">
-                    <span className="icon-github-circle" title="Git with GitHub"></span>
-                  </a>
-                  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
-                    <span className="icon-html5" title="HTML5"></span>
-                  </a>
-                  <a target="_blank" href="https://www.w3schools.com/css/css3_intro.asp">
-                    <span className="icon-css3" title="CSS3"></span>
-                  </a>
-                  <a target="_blank" href="http://getbootstrap.com/">
-                    <span className="icon-bootstrap" title="Bootstrap"></span>
-                  </a>
-                  <a target="_blank" href="https://www.javascript.com/">
-                    <span className="icon-js" title="JavaScript"></span>
-                  </a>
-                  <a target="_blank" href="https://nodejs.org/">
-                    <span className="icon-nodejs" title="Node.js"></span>
-                  </a>
-                  <a target="_blank" href="https://angularjs.org/">
-                    <span className="icon-angular" title="AngularJS"></span>
-                  </a>
-                  <a target="_blank" href="https://www.mongodb.com/">
-                    <span className="icon-mongodb" title="MongoDB"></span>
-                  </a>
-                </p>
-              </div>
-
-            </div>
-
-
-            <div className="thumbnail-16-9">
-
-              <div className="thumbnail-16-9-overlay">
-                <a target="_blank" href="">
-                  <h4>Gube Roldberg</h4>
-                </a>
-                <p className="tech-icons">
-                  <a target="_blank" href="https://github.com/Skylocke/gube-roldberg">
-                    <span className="icon-github-circle" title="Git with GitHub"></span>
-                  </a>
-                  <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
-                    <span className="icon-html5" title="HTML5"></span>
-                  </a>
-                  <a target="_blank" href="https://www.w3schools.com/css/css3_intro.asp">
-                    <span className="icon-css3" title="CSS3"></span>
-                  </a>
-                  <a target="_blank" href="https://www.javascript.com/">
-                    <span className="icon-js" title="JavaScript"></span>
-                  </a>
-                  <a target="_blank" href="https://nodejs.org/">
-                    <span className="icon-nodejs" title="Node.js"></span>
-                  </a>
-                  <a target="_blank" href="https://angularjs.org/">
-                    <span className="icon-angular" title="AngularJS"></span>
-                  </a>
-                  <a target="_blank" href="https://www.mongodb.com/">
-                    <span className="icon-mongodb" title="MongoDB"></span>
-                  </a>
-                </p>
-              </div>
-
-            </div>
-
-          </div>
           <p><small>Curious what a particular icon represents? Hover your mouse over it.</small></p>
+          <div className="projects">
+            {this.thumbnails()}
+          </div>
         </div>
       </div>
     </section>
     );
   }
+
+  thumbnails() {
+    return this.state.projects.map((project, index) => {
+      return <Thumbnail key={project.name} id={index} name={project.name}
+                        img={project.img} thumb={project.thumb}
+                        github={project.github} tech={project.tech} desc={project.desc} />
+    });
+  }
+
 }
 
 export default Projects;
