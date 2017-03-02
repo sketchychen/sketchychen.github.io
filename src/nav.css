@@ -1,0 +1,74 @@
+/* NAVIGATION BAR */
+
+#nav {
+  /*position: absolute;*/
+  /*top: 80%;*/
+  /*bottom: 0;*/
+  width: 100%;
+  z-index: 99;
+}
+
+.nav-spacer-row {
+  /*background-color: rgba(0, 200, 0, 0.5);*/
+  width: 100%;
+  height: 4em;
+}
+
+.navbar {
+  position: static;
+  height: 4em;
+  /*width: 90%;
+    margin: 0 5%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;*/
+  width: 100%;
+}
+
+.navbar-docked {
+  position: fixed;
+  width: 100%;
+  /*margin: 0;*/
+  top: 0;
+  background: rgba(40, 49, 86, 1);
+}
+
+.navbar-list {
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-button {
+  background: none;
+  border: none;
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+  text-indent: 0.2rem;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 1rem;
+}
+
+.navbar-button:hover {
+  padding-bottom: 0.5em;
+}
+
+.navbar-button:focus {
+  outline: none;
+}
+
+.navbar-current {
+  background-color: rgba(255, 255, 255, 0.25);
+}
