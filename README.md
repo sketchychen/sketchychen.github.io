@@ -1,2 +1,0 @@
-# skylocke.github.io
-homepage
