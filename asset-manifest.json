@@ -1,11 +1,15 @@
 {
-  "main.css": "static/css/main.8bb74d63.css",
-  "main.css.map": "static/css/main.8bb74d63.css.map",
-  "main.js": "static/js/main.e209c815.js",
-  "main.js.map": "static/js/main.e209c815.js.map",
+  "main.css": "static/css/main.19aac164.css",
+  "main.css.map": "static/css/main.19aac164.css.map",
+  "main.js": "static/js/main.2a98fcdb.js",
+  "main.js.map": "static/js/main.2a98fcdb.js.map",
   "static/media/8-bit-chat.gif": "static/media/8-bit-chat.47080db8.gif",
   "static/media/duckface.png": "static/media/duckface.6fb8d721.png",
   "static/media/laser-simulator.gif": "static/media/laser-simulator.f04ae15f.gif",
   "static/media/pixel-me.gif": "static/media/pixel-me.a6deac3d.gif",
-  "static/media/taste-saver.png": "static/media/taste-saver.bb8b8aff.png"
+  "static/media/taste-saver.png": "static/media/taste-saver.bb8b8aff.png",
+  "static/media/technology-icons.eot": "static/media/technology-icons.56343b33.eot",
+  "static/media/technology-icons.svg": "static/media/technology-icons.eb151c2f.svg",
+  "static/media/technology-icons.ttf": "static/media/technology-icons.3033a336.ttf",
+  "static/media/technology-icons.woff": "static/media/technology-icons.5beb563a.woff"
 }
