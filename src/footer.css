@@ -40,7 +40,7 @@ footer {
   content: '';
 }
 
-.about-site>a {
+.about-site a {
   text-decoration: underline;
 }
 
