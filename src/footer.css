@@ -40,6 +40,10 @@ footer {
   content: '';
 }
 
+.about-site>a {
+  text-decoration: underline;
+}
+
 @media screen and (orientation:portrait) {
   footer {
     height: auto;
