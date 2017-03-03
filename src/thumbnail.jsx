@@ -19,7 +19,8 @@ class Thumbnail extends Component {
         "MongoDB": { icon: "icon-mongodb", href: "https://www.mongodb.com/" },
         "Heroku": { icon: "icon-heroku", href: "https://www.heroku.com/" },
         "Adobe Photoshop": { icon: "icon-photoshop", href: "https://www.adobe.com/products/photoshop.html" },
-        "A-Frame VR": { icon: "icon-custom icon-cardboard-white", href: "https://aframe.io/", spaceNeeded: "\u00A0" }
+        "Adobe Illustrator": { icon: "icon-illustrator", href: "https://www.adobe.com/products/illustrator.html" },
+        "A-Frame VR": { icon: "icon-custom icon-cardboard-white", href: "https://aframe.io/", spaceNeeded: "\u00A0\u00A0" }
       }
     }
   }

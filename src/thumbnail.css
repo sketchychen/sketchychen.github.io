@@ -55,7 +55,7 @@
 .thumbnail-16-9-overlay h4 {
   margin: 0 auto;
   width: 100%;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   letter-spacing: 0.3rem;
   text-indent: 0.3rem;
@@ -64,7 +64,7 @@
 
 .thumbnail-desc {
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   letter-spacing: 0.1rem;
   text-indent: 0.1rem;
@@ -80,22 +80,26 @@
   margin: 10px auto;
   text-align: center;
   font-family: monospace;
-  font-size: 25px;
-  letter-spacing: 0.75rem;
-  text-indent: 0.25rem;
+  font-size: 18px;
+  /*letter-spacing: 0.7rem;
+  text-indent: 0.28rem;*/
+}
+
+.tech-icons>a {
+  margin: 0 7px;
 }
 
 .icon-custom {
-  margin: 0 4px;
+  /*margin: 0 4px;*/
 }
 
 .icon-cardboard-black {
-  background: url('../public/img/cardboard-black.png') no-repeat center;
+  background: url('../public/img/cardboard-black.png') no-repeat bottom;
   background-size: contain;
 }
 
 .icon-cardboard-white {
-  background: url('../public/img/cardboard-white.png') no-repeat center;
+  background: url('../public/img/cardboard-white.png') no-repeat bottom;
   background-size: contain;
 }
 
@@ -106,6 +110,11 @@
 
 #thumbnail-duckface {
   background: url('../public/img/portfolio/duckface.png') no-repeat center;
+  background-size: cover;
+}
+
+#thumbnail-subtvtle {
+  background: url('../public/img/portfolio/subtvtle.png') no-repeat center;
   background-size: cover;
 }
 

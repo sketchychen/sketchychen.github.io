@@ -28,6 +28,16 @@ class Projects extends Component {
           desc: "bringing duckface back by auto-superimposing duck beaks over faces in your photos for you"
         },
         {
+          name: "Subtvtle",
+          img: "../public/img/portfolio/subtvtle.png",
+          thumb: "thumbnail-subtvtle",
+          url: "",
+          github: "https://github.com/skylocke/ng-mongoose-subtitles",
+          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
+                "AngularJS", "MongoDB", "Adobe Illustrator"],
+          desc: "add your own spin to the subtitles for the meme-infamous scene from the movie Downfall (2004)"
+        },
+        {
           name: "8-Bit Chat",
           img: "../public/img/portfolio/8-bit-chat.gif",
           thumb: "thumbnail-8bitchat",
@@ -35,7 +45,7 @@ class Projects extends Component {
           github: "https://github.com/skylocke/8-bit-chat",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku", "Adobe Photoshop"],
-          desc: "talk to other fellow colorful rectangles in this 8-bit-influenced avatar chat room"
+          desc: "talk to other fellow colorful rectangle people in this 8-bit-styled avatar chat room"
         },
         {
           name: "Gube Roldberg",

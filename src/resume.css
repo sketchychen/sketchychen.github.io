@@ -21,7 +21,16 @@
   width: 100%;
   display: flex;
   flex-flow: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+#résumé .resume-downloads-bottom {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
   justify-content: flex-end;
+  align-items: flex-end;
   margin-bottom: 10px;
 }
 
@@ -33,7 +42,7 @@
 
 #résumé .resume-glyph>p {
   text-align: center;
-  width: 110px;
+  width: 115px;
   display: flex;
   justify-content: center;
 }

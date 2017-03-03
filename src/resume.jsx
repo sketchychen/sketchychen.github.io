@@ -34,13 +34,13 @@ class Resume extends Component {
           ]
         }
       ],
-      employment: [
+      experience: [
         {
           place: "Boeing Commercial Airplanes (BCA)",
           location: "Long Beach, CA",
           title: "Structural Analysis Engineer Level 2 for Interiors Stress",
           duration: "July 2011 - Aug 2014",
-          desc: "Analyzed structural integrity of multiple airplane interior commodities onboard Boeing model series 757, 767, 777, and 787 per FAA regulations by developing and troubleshooting simulations."
+          desc: "Analyzed and documented structural integrity of multiple airplane interior commodities onboard Boeing model series 757, 767, 777, and 787 per FAA regulations, building and troubleshooting computer simulations for each assembly."
 
         },
         {
@@ -63,18 +63,21 @@ class Resume extends Component {
       volunteering: [
         {
           program: "FIRST Robotics Competition (FRC)",
+          location: "Long Beach, CA and St. Louis, MO",
           duration: "Sept 2013 - Jun 2014",
           title: "Programming Mentor",
           desc: "Mentor for rookie FRC Team #4997, consisting of high school students from Long Beach Polytechnic, Wilson Classical, and Classical Conversations."
         },
         {
           program: "Engineering Week by Boeing (BCA)",
+          location: "Long Beach, CA",
           duration: "Feb 2012 - Feb 2013",
           title: "Outreach Volunteer",
           desc: "Visited middle school classrooms yearly to generate interest in engineering fields and to present hands-on workshops on electromagnetism."
         },
         {
           program: "MESA Science and Technology Day at UCSB",
+          location: "Santa Barbara, CA",
           duration: "Mar 2009 - Mar 2011",
           title: "Workshop Volunteer",
           desc: "Presented hands-on workshops yearly on electromagnetism for visiting students in grades 6 – 12."
@@ -91,38 +94,45 @@ class Resume extends Component {
           <a target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpM0xkVEFWbUNqQ2s/view">
             <i className="fa fa-file-pdf-o"></i> get the PDF
           </a>
-          <a target="_blank" href="">
-            <i className="fa fa-file-text-o"></i> plain text version coming soon
+          <a target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpMzFRdS1PWlZ3TGM/view?usp=sharing">
+            <i className="fa fa-file-text-o"></i> plain text
           </a>
         </div>
-            <div className="resume-row">
-              <div className="resume-glyph">
-                <i className="fa fa-graduation-cap"></i>
-                <p>education</p>
-              </div>
-              <div className="resume-content">
-                {this.education()}
-              </div>
-            </div>
-            <div className="resume-row">
-              <div className="resume-glyph">
-                <i className="fa fa-industry"></i>
-                <p>employment</p>
-              </div>
-              <div className="resume-content">
-                {this.employment()}
-              </div>
-            </div>
-            <div className="resume-row">
-              <div className="resume-glyph">
-                <i className="fa fa-group"></i>
-                <p>volunteering</p>
-              </div>
-              <div className="resume-content">
-                {this.volunteering()}
-              </div>
-            </div>
-
+        <div className="resume-row">
+          <div className="resume-glyph">
+            <i className="fa fa-graduation-cap"></i>
+            <p>education</p>
+          </div>
+          <div className="resume-content">
+            {this.education()}
+          </div>
+        </div>
+        <div className="resume-row">
+          <div className="resume-glyph">
+            <i className="fa fa-industry"></i>
+            <p>experience</p>
+          </div>
+          <div className="resume-content">
+            {this.experience()}
+          </div>
+        </div>
+        <div className="resume-row">
+          <div className="resume-glyph">
+            <i className="fa fa-group"></i>
+            <p>volunteering</p>
+          </div>
+          <div className="resume-content">
+            {this.volunteering()}
+          </div>
+        </div>
+        <div className="resume-downloads-bottom">
+          <a target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpM0xkVEFWbUNqQ2s/view">
+            get the PDF <i className="fa fa-file-pdf-o"></i>
+          </a>
+          <a target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpMzFRdS1PWlZ3TGM/view?usp=sharing">
+            plain text <i className="fa fa-file-text-o"></i>
+          </a>
+        </div>
 
         </div>
       </section>
@@ -158,8 +168,8 @@ class Resume extends Component {
     });
   }
 
-  employment() {
-    return this.state.employment.map(job => {
+  experience() {
+    return this.state.experience.map(job => {
       return (
         <div key={job.place}>
           <p className="resume-header">
@@ -180,7 +190,10 @@ class Resume extends Component {
     return this.state.volunteering.map(vol => {
       return (
         <div key={vol.program}>
-          <p className="resume-header resume-primary">{vol.program}</p>
+          <p className="resume-header">
+            <span className="resume-primary">{vol.program}</span>
+            <span>{vol.location}</span>
+          </p>
           <p className="resume-secondary">
             <span>{vol.title}</span>
             <span>{vol.duration}</span>
