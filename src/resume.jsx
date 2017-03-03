@@ -17,7 +17,7 @@ class Resume extends Component {
             },
             {
               name: "Data Science Part-time",
-              duration: "March 2016 - May 2016",
+              duration: "Mar 2016 - May 2016",
               desc: "72 hours of instruction in data science and useful Python libraries, culminating in a final project at the end of the course."
             }
           ]
@@ -38,41 +38,32 @@ class Resume extends Component {
         {
           place: "Boeing Commercial Airplanes (BCA)",
           location: "Long Beach, CA",
-          positions: [
-            {
-              title: "Structural Analysis Engineer Level 2 for Interiors Stress",
-              duration: "July 2011 - August 2014",
-              desc: "Analyzed structural integrity of multiple airplane interior commodities onboard Boeing model series 757, 767, 777, and 787 per FAA regulations by developing and troubleshooting simulations."
-            }
-          ]
+          title: "Structural Analysis Engineer Level 2 for Interiors Stress",
+          duration: "July 2011 - Aug 2014",
+          desc: "Analyzed structural integrity of multiple airplane interior commodities onboard Boeing model series 757, 767, 777, and 787 per FAA regulations by developing and troubleshooting simulations."
+
         },
         {
           place: "University of California, Santa Barbara (UCSB)",
           location: "Santa Barbara, CA",
-          positions: [
-            {
-              title: "Lab Teaching Assistant for ME 10: Engineering Graphics",
-              duration: "March 2011 - June 2011",
-              desc: "Graded assignments and assisted students with computer-aided design coursework for up to eight hours per week."
-            }
-          ]
+          title: "Lab Teaching Assistant for ME 10: Engineering Graphics",
+          duration: "Mar 2011 - June 2011",
+          desc: "Graded assignments and assisted students with computer-aided design coursework for up to eight hours per week."
+
         },
         {
           place: "Inovati Kinetic Metallization",
           location: "Goleta, CA",
-          positions: [
-            {
-              title: "Workshop Assistant and Intern",
-              duration: "Nov 2009 - Jun 2010",
-              desc: "Organized company product convention for domestic and international clients. Maintained workshop. Prepared and post-processed metallography test samples."
-            }
-          ]
+          title: "Workshop Assistant and Intern",
+          duration: "Nov 2009 - Jun 2010",
+          desc: "Organized company product convention for domestic and international clients. Maintained workshop. Prepared and post-processed metallography test samples."
+
         }
       ],
       volunteering: [
         {
           program: "FIRST Robotics Competition (FRC)",
-          duration: "Sep 2013 - Jun 2014",
+          duration: "Sept 2013 - Jun 2014",
           title: "Programming Mentor",
           desc: "Mentor for rookie FRC Team #4997, consisting of high school students from Long Beach Polytechnic, Wilson Classical, and Classical Conversations."
         },
@@ -96,24 +87,103 @@ class Resume extends Component {
     return (
       <section className="section-wrapper" id="résumé">
         <div className="section-row">
-          <div className="section-image">
 
-          </div>
-          <div className="section-content">
+            <div className="resume-row">
+              <div className="resume-glyph">
+                <i className="fa fa-graduation-cap"></i>
+                <p>education</p>
+              </div>
+              <div className="resume-content">
+                {this.education()}
+              </div>
+            </div>
+            <div className="resume-row">
+              <div className="resume-glyph">
+                <i className="fa fa-industry"></i>
+                <p>employment</p>
+              </div>
+              <div className="resume-content">
+                {this.employment()}
+              </div>
+            </div>
+            <div className="resume-row">
+              <div className="resume-glyph">
+                <i className="fa fa-group"></i>
+                <p>volunteering</p>
+              </div>
+              <div className="resume-content">
+                {this.volunteering()}
+              </div>
+            </div>
 
-          </div>
-          <p>I'm in the middle of prettifying this section.</p>
-          <p>In the mean time, here's both an embedded version of my resume and a link to the PDF itself:</p>
-          <p>
-            <a target="_blank" href="https://resume.creddle.io/embed/a5pujxmnmpa">
-              <i className="fa fa-file-text" aria-hidden="true"></i> Résumé
-            </a>
-          </p>
-          <iframe src="https://resume.creddle.io/embed/a5pujxmnmpa" width="850" height="275" seamless></iframe>
+
         </div>
       </section>
     );
   }
+
+
+  getEduPrograms(eduIndex) {
+    return this.state.education[eduIndex].programs.map(program => {
+      return (
+        <div key={program.name}>
+          <p className="resume-secondary">
+            <span>{program.name}</span>
+            <span>{program.duration}</span>
+          </p>
+          <p className="resume-desc">{program.desc}</p>
+        </div>
+      )
+    });
+  }
+
+  education() {
+    return this.state.education.map((edu, index) => {
+      return (
+        <div key={edu.place}>
+          <p className="resume-header">
+            <span className="resume-primary">{edu.place}</span>
+            <span>{edu.location}</span>
+          </p>
+          {this.getEduPrograms(index)}
+        </div>
+      )
+    });
+  }
+
+  employment() {
+    return this.state.employment.map(job => {
+      return (
+        <div key={job.place}>
+          <p className="resume-header">
+            <span className="resume-primary">{job.place}</span>
+            <span>{job.location}</span>
+          </p>
+          <p className="resume-secondary">
+            <span>{job.title}</span>
+            <span>{job.duration}</span>
+          </p>
+          <p className="resume-desc">{job.desc}</p>
+        </div>
+      )
+    });
+  }
+
+  volunteering() {
+    return this.state.volunteering.map(vol => {
+      return (
+        <div key={vol.program}>
+          <p className="resume-header resume-primary">{vol.program}</p>
+          <p className="resume-secondary">
+            <span>{vol.title}</span>
+            <span>{vol.duration}</span>
+          </p>
+          <p className="resume-desc">{vol.desc}</p>
+        </div>
+      )
+    });
+  }
+
 }
 
 export default Resume;
