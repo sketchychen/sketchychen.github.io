@@ -15,7 +15,7 @@ class Projects extends Component {
           github: "https://github.com/skylocke/laser-eye-beam-simulator",
           url: "http://rschen.co/laser-eye-beam-simulator/",
           tech: ["HTML5", "CSS3", "JavaScript", "A-Frame VR"],
-          desc: "helping you pretend you have laser eyes, provided you have either a computer or a smart phone"
+          desc: "now you, too, can pretend to have laser eyes, provided you're using a smart phone with a VR peripheral"
         },
         {
           name: "Duckface",
@@ -23,7 +23,7 @@ class Projects extends Component {
           thumb: "thumbnail-duckface",
           url: "http://duckface.herokuapp.com/",
           github: "https://github.com/skylocke/duck-face",
-          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
+          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "PostgreSQL", "Heroku"],
           desc: "bringing duckface back by auto-superimposing duck beaks over faces in your photos for you"
         },
@@ -33,19 +33,9 @@ class Projects extends Component {
           thumb: "thumbnail-8bitchat",
           url: "http://eightbitchat.herokuapp.com/",
           github: "https://github.com/skylocke/8-bit-chat",
-          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
+          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku", "Adobe Photoshop"],
-          desc: "talk to other fellow rectangles in this 8-bit-styled avatar chat room"
-        },
-        {
-          name: "Taste Saver",
-          img: "../public/img/portfolio/taste-saver.png",
-          thumb: "thumbnail-tastesaver",
-          url: "",
-          github: "https://github.com/Skylocke/picky-eater-hackathon",
-          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
-                "AngularJS", "MongoDB", "Heroku"],
-          desc: ""
+          desc: "talk to other fellow colorful rectangles in this 8-bit-influenced avatar chat room"
         },
         {
           name: "Gube Roldberg",
@@ -53,10 +43,20 @@ class Projects extends Component {
           thumb: "thumbnail-guberoldberg",
           url: "http://guberoldberg.herokuapp.com/",
           github: "https://github.com/Skylocke/gube-roldberg",
-          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "JQuery", "Node.js",
+          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku"],
-          desc: "make simple rube-goldberg-esque contraptions with the gube-roldberg interface"
+          desc: "make simple rube-goldberg-esque contraptions with the gube roldberg interface"
         },
+        {
+          name: "Taste Saver",
+          img: "../public/img/portfolio/taste-saver.png",
+          thumb: "thumbnail-tastesaver",
+          url: "",
+          github: "https://github.com/Skylocke/picky-eater-hackathon",
+          tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
+                "AngularJS", "MongoDB", "Heroku"],
+          desc: "catalogue recipes from around the internet with the result of a one-day hackathon collaboration by two web developers and two UX designers"
+        }
       ]
     };
 

@@ -19,7 +19,7 @@
   display: block;
   content: '';
   /*background-color: rgba(100, 200, 100, 0.5);*/
-  box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  box-shadow: 0 1px 6px rgba(34, 25, 25, 0.6);
 }
 
 .thumbnail-img {
@@ -53,16 +53,17 @@
 }
 
 .thumbnail-16-9-overlay h4 {
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
   font-size: 18px;
   text-align: center;
-  letter-spacing: 0.25rem;
-  text-indent: 0.25rem;
+  letter-spacing: 0.3rem;
+  text-indent: 0.3rem;
   text-transform: uppercase;
 }
 
 .thumbnail-desc {
-  margin: 0;
+  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   letter-spacing: 0.1rem;
@@ -76,20 +77,16 @@
 }
 
 .tech-icons {
-  margin: 10px 0;
+  margin: 10px auto;
   text-align: center;
   font-family: monospace;
   font-size: 25px;
-  letter-spacing: 0.5rem;
-  text-indent: 0.5rem;
-  /*height: 30px;*/
+  letter-spacing: 0.75rem;
+  text-indent: 0.25rem;
 }
 
 .icon-custom {
-  width: 20px;
-  height: 20px;
-  /*padding: 0;
-  margin: 0;*/
+  margin: 0 4px;
 }
 
 .icon-cardboard-black {
@@ -119,5 +116,10 @@
 
 #thumbnail-tastesaver {
   background: url('../public/img/portfolio/taste-saver.png') no-repeat center;
+  background-size: cover;
+}
+
+#thumbnail-guberoldberg {
+  background: url('../public/img/portfolio/gube-roldberg.gif') no-repeat bottom;
   background-size: cover;
 }
