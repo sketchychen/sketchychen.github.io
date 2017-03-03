@@ -1,0 +1,252 @@
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+html {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+body {
+  /*background-color: rgba(255, 255, 255, 1);*/
+  background-color: #F4F5F7;
+  /*font-family: 'Shadows Into Light', cursive;*/
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.05rem;
+  /*text-indent: 0.1rem;*/
+  /*font-size: 20px;*/
+  text-align: justify;
+  text-align-last: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: inherit;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/*@media screen and (max-width:500px) {
+  #home .overlay-stack {
+    transform: scale(0.5, 0.5);
+  }
+}*/
+
+@media screen and (orientation:portrait) {
+  .section-row {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .section-content {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    /*justify-content: center;
+        align-items: center;*/
+  }
+  .section-image {
+    width: 100%;
+    height: 40%;
+  }
+
+}
+
+@media all and (orientation:landscape) {
+  .section-row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .section-content {
+    width: 60%;
+    /*height: 100%;*/
+  }
+  .section-image {
+    width: 40%;
+    height: 100%;
+  }
+
+}
+
+.section-wrapper {
+  /*position: absolute;*/
+  width: 100%;
+  /*height: 100%;*/
+  /*display: flex;
+  flex-flow: column;
+  justify-content: flex-start;*/
+}
+
+.section-row {
+  /*background-color: rgba(0, 50, 0, 0.5);*/
+  padding: 5% 7%;
+  /*height: 96%;*/
+}
+
+.section-content {
+  /*background-color: rgba(0, 200, 200, 0.5);*/
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image {
+  /*background-color: rgba(0, 150, 0, 0.5);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ANIMATED EFFECTS */
+
+.floating {
+  /*float: left;*/
+  -webkit-animation-name: Floating;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  animation-name: Floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /*margin-left: 30px;
+    margin-top: 5px;*/
+}
+
+@-webkit-keyframes Floating {
+  from {
+    -webkit-transform: translate(0, 0px);
+  }
+  65% {
+    -webkit-transform: translate(0, 15px);
+  }
+  to {
+    -webkit-transform: translate(0, -0px);
+  }
+}
+
+@-moz-keyframes Floating {
+  from {
+    -moz-transform: translate(0, 0px);
+  }
+  65% {
+    -moz-transform: translate(0, 15px);
+  }
+  to {
+    -moz-transform: translate(0, -0px);
+  }
+}
+
+@keyframes Floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+
+/* need to account for additional transform parameter that home-banner has */
+
+.floating-home-banner {
+  -webkit-animation-name: FloatingH;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: FloatingH;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  animation-name: FloatingH;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes FloatingH {
+  from {
+    -webkit-transform: translate(0, 5px) skewY(-10deg);
+  }
+  50% {
+    -webkit-transform: translate(0, -5px) skewY(-10deg);
+  }
+  to {
+    -webkit-transform: translate(0, 5px) skewY(-10deg);
+  }
+}
+
+@-moz-keyframes FloatingH {
+  from {
+    -moz-transform: translate(0, 5px) skewY(-10deg);
+  }
+  50% {
+    -moz-transform: translate(0, -5px) skewY(-10deg);
+  }
+  to {
+    -moz-transform: translate(0, 5px) skewY(-10deg);
+  }
+}
+
+@keyframes FloatingH {
+  from {
+    transform: translate(0, 5px) skewY(-10deg);
+  }
+  50% {
+    transform: translate(0, -5px) skewY(-10deg);
+  }
+  to {
+    transform: translate(0, 5px) skewY(-10deg);
+  }
+}
+
+.spin {
+  -webkit-animation: Spin 7s linear infinite;
+  -moz-animation: Spin 7s linear infinite;
+  animation: Spin 7s linear infinite;
+}
+
+@-moz-keyframes Spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes Spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes Spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

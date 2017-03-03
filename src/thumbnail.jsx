@@ -10,7 +10,7 @@ class Thumbnail extends Component {
         "HTML5": { icon: "icon-html5", href: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" },
         "CSS3": { icon: "icon-css3", href: "https://www.w3schools.com/css/css3_intro.asp" },
         "JavaScript": { icon: "icon-js", href: "https://www.javascript.com/" },
-        "JQuery": { icon: "icon-jquery", href: "https://jquery.com/" },
+        "jQuery": { icon: "icon-jquery", href: "https://jquery.com/" },
         "Bootstrap": { icon: "icon-bootstrap", href: "http://getbootstrap.com/" },
         "Node.js": { icon: "icon-nodejs", href: "https://nodejs.org/" },
         "AngularJS": { icon: "icon-angular", href: "https://angularjs.org/" },
@@ -19,7 +19,8 @@ class Thumbnail extends Component {
         "MongoDB": { icon: "icon-mongodb", href: "https://www.mongodb.com/" },
         "Heroku": { icon: "icon-heroku", href: "https://www.heroku.com/" },
         "Adobe Photoshop": { icon: "icon-photoshop", href: "https://www.adobe.com/products/photoshop.html" },
-        "A-Frame VR": { icon: "icon-custom icon-cardboard-white", href: "https://aframe.io/" }
+        "Adobe Illustrator": { icon: "icon-illustrator", href: "https://www.adobe.com/products/illustrator.html" },
+        "A-Frame VR": { icon: "icon-custom icon-cardboard-white", href: "https://aframe.io/", spaceNeeded: "\u00A0\u00A0" }
       }
     }
   }
@@ -49,7 +50,9 @@ class Thumbnail extends Component {
     return this.props.tech.map(tech => {
       return (
         <a target="_blank" href={this.state.tech[tech].href} key={tech}>
-          <span className={this.state.tech[tech].icon} title={tech}></span>
+          <span className={this.state.tech[tech].icon} title={tech}>
+          {this.state.tech[tech].spaceNeeded}
+          </span>
         </a>
       )
     });
