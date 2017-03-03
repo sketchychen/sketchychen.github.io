@@ -17,7 +17,7 @@
   margin: 10px 0;
   padding: 2% 1.5%;
   background-color: white;
-  box-shadow: 0 2px 3px rgba(34, 25, 25, 0.6);
+  box-shadow: 0 2px 6px rgba(34, 25, 25, 0.4);
 }
 
 #résumé .resume-downloads {
@@ -62,7 +62,7 @@
 }
 
 #résumé .resume-content {
-  margin-left: 30px;
+  margin: 0 10px 0 30px;
   display: flex;
   flex-flow: column;
 }

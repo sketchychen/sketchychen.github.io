@@ -44,6 +44,10 @@ class Footer extends Component {
           <p>rschen.co is built with <a target="_blank" href="https://facebook.github.io/react/">React.js</a> with a bit of jQuery, sprinkled with a dash of decorative silliness made in MS Paint and Adobe Photoshop.</p>
           <p>various icons and logos are from <a target="_blank" href="http://fontawesome.io/">fontawesome.io</a> and <a target="_blank" href="http://websiddu.github.io/technology-icons/">websiddu.github.io/technology-icons</a></p>
         </div>
+        <div className="me">
+          <div id="pic"></div>
+          <p className="pic-caption">contrary to popular belief Rachel is <em>not</em> a figment of your imagination</p>
+        </div>
       </footer>
     );
   }
