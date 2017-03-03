@@ -10,11 +10,14 @@
 }
 
 #résumé .resume-row {
-  width: 100%;
+  width: 97%;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   margin: 10px 0;
+  padding: 2% 1.5%;
+  background-color: white;
+  box-shadow: 0 2px 3px rgba(34, 25, 25, 0.6);
 }
 
 #résumé .resume-downloads {

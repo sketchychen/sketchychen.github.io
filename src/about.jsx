@@ -13,7 +13,7 @@ class About extends Component {
             <p>After getting her Bachelor's degree in mechanical engineering and
               working as a structural engineer for a while, Rachel figured it was
               high time she moved on to master the coding world as the next step
-              in bringing about the robot apocalpyse in her image.</p>
+              in bringing about the robot apocalypse in her image.</p>
             <p>Good luck to humanity, y'all!</p>
           </div>
           <div className="section-image">
