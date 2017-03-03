@@ -87,9 +87,14 @@ class Resume extends Component {
     return (
       <section className="section-wrapper" id="résumé">
         <div className="section-row">
+        <div className="resume-downloads">
           <a target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpM0xkVEFWbUNqQ2s/view">
             <i className="fa fa-file-pdf-o"></i> get the PDF
           </a>
+          <a target="_blank" href="">
+            <i className="fa fa-file-text-o"></i> plain text version coming soon
+          </a>
+        </div>
             <div className="resume-row">
               <div className="resume-glyph">
                 <i className="fa fa-graduation-cap"></i>
