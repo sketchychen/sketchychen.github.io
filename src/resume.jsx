@@ -92,10 +92,10 @@ class Resume extends Component {
         <div className="section-row">
         <div className="resume-downloads">
           <a target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpM0xkVEFWbUNqQ2s/view">
-            <i className="fa fa-file-pdf-o"></i> get the PDF
+            <i className="fa fa-file-pdf-o"></i> get my résumé as a PDF
           </a>
           <a target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpMzFRdS1PWlZ3TGM/view?usp=sharing">
-            <i className="fa fa-file-text-o"></i> plain text
+            <i className="fa fa-file-text-o"></i> and/or in plain text format
           </a>
         </div>
         <div className="resume-row">
@@ -127,10 +127,10 @@ class Resume extends Component {
         </div>
         <div className="resume-downloads-bottom">
           <a target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpM0xkVEFWbUNqQ2s/view">
-            get the PDF <i className="fa fa-file-pdf-o"></i>
+            get my résumé as a PDF <i className="fa fa-file-pdf-o"></i>
           </a>
           <a target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpMzFRdS1PWlZ3TGM/view?usp=sharing">
-            plain text <i className="fa fa-file-text-o"></i>
+            and/or in plain text format <i className="fa fa-file-text-o"></i>
           </a>
         </div>
 
