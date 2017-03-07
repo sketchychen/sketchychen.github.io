@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './home.css';
-import './nav.css';
+import Nav from './nav.jsx';
 
 class Home extends Component {
   render() {
@@ -40,16 +40,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <nav id="nav">
-            <div className="navbar">
-              <ul className="navbar-list list-unstyled">
-                <li className="navbar-item"><button className="navbar-button">home</button></li>
-                <li className="navbar-item"><button className="navbar-button">résumé</button></li>
-                <li className="navbar-item"><button className="navbar-button">projects</button></li>
-                <li className="navbar-item"><button className="navbar-button">about</button></li>
-              </ul>
-            </div>
-          </nav>
+        <Nav />
         </div>
       </section>
     );

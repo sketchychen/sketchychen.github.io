@@ -65,7 +65,7 @@ class Projects extends Component {
           github: "https://github.com/Skylocke/picky-eater-hackathon",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku"],
-          desc: "catalogue recipes from around the internet with the result of a one-day hackathon collaboration by two web developers and two UX designers"
+          desc: "catalogue recipes from around the internet with the result of a one-day hackathon collaboration"
         }
       ]
     };

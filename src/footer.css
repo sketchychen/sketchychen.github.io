@@ -69,9 +69,9 @@ footer {
   footer>.me {
     width: 100%;
     display: flex;
-    flex-flow: row-reverse;
+    flex-flow: column wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 
   footer>.icons {
