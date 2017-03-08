@@ -8,12 +8,6 @@
   z-index: 99;
 }
 
-.nav-spacer-row {
-  /*background-color: rgba(0, 200, 0, 0.5);*/
-  width: 100%;
-  height: 4em;
-}
-
 .navbar {
   position: static;
   height: 4em;

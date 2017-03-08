@@ -34,7 +34,7 @@ class Projects extends Component {
           url: "",
           github: "https://github.com/skylocke/ng-mongoose-subtitles",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
-                "AngularJS", "MongoDB", "Adobe Illustrator"],
+                "AngularJS", "MongoDB"],
           desc: "add your own spin to the subtitles for the meme-infamous scene from the movie Downfall (2004)"
         },
         {
@@ -44,7 +44,7 @@ class Projects extends Component {
           url: "http://eightbitchat.herokuapp.com/",
           github: "https://github.com/skylocke/8-bit-chat",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
-                "AngularJS", "MongoDB", "Heroku", "Adobe Photoshop"],
+                "AngularJS", "MongoDB", "Heroku"],
           desc: "talk to other fellow colorful rectangle people in this 8-bit-styled avatar chat room"
         },
         {

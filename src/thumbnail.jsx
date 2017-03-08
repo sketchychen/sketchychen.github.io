@@ -33,17 +33,14 @@ class Thumbnail extends Component {
             <h4>{this.props.name}</h4>
           </div>
           <p className="tech-icons">
-            <a target="_blank" href={this.props.github}>
-              <span className="icon-github-circle" title="Git with GitHub"></span>
-            </a>
             {this.techIcons()}
           </p>
           <p className="thumbnail-desc">
             {this.props.desc}
           </p>
-          <p className="thumbnail-footer">
+          <p className="thumbnail-extra">
             <a target="_blank" href={this.props.github}>
-              <span className="icon-github-circle" title="Git with GitHub"></span> github repo
+              <span className="icon-github-circle" title="see the code on github"></span>
             </a>
           </p>
         </a>
