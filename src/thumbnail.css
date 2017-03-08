@@ -16,7 +16,6 @@
   width: 90%;
 }
 
-
 .icon-custom {
   /*margin: 0 4px;*/
 }
@@ -49,7 +48,7 @@
     margin: 0 auto;
     width: 100%;
     font-size: 14px;
-    text-align: justify;
+    text-align: left;
     text-align-last: left;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -128,7 +127,7 @@
     font-size: 18px;
   }
 
-  .tech-icons>a {
+  .tech-icons a {
     margin: 0 7px;
   }
 
@@ -145,7 +144,7 @@
 
   .thumbnail-footer {
     position: absolute;
-    bottom: 10px;
+    bottom: 1%;
     font-size: 12px;
   }
 
@@ -178,7 +177,7 @@
 }
 
 #thumbnail-8bitchat {
-  background: url('../public/img/portfolio/8-bit-chat.gif') no-repeat center;
+  background: url('../public/img/portfolio/8-bit-chat.gif') no-repeat bottom;
   background-size: cover;
 }
 

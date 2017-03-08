@@ -29,9 +29,9 @@ class Thumbnail extends Component {
     return (
       <a className="thumbnail-16-9" id={this.props.thumb} target="_blank" href={this.props.href}>
         <a className="thumbnail-16-9-overlay" target="_blank" href={this.props.href}>
-          <a target="_blank" href={this.props.href} title={this.props.name}>
+          <div target="_blank" href={this.props.href} title={this.props.name}>
             <h4>{this.props.name}</h4>
-          </a>
+          </div>
           <p className="tech-icons">
             <a target="_blank" href={this.props.github}>
               <span className="icon-github-circle" title="Git with GitHub"></span>

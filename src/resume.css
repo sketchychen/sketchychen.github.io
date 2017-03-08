@@ -2,18 +2,13 @@
 
 #résumé .section-row {
   background-color: rgba(236, 237, 241, 1);
-  /*top: 100%;*/
-  /*left: 0;*/
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 
 #résumé .resume-row {
-  width: 97%;
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
   margin: 10px 0;
   padding: 2% 1.5%;
   background-color: white;
@@ -38,13 +33,17 @@
 }
 
 #résumé .resume-glyph {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  display: inline-block;
+  margin: 0 auto;
+  /*flex-flow: column;
+  align-items: center;*/
+  cursor: pointer;
 }
 
 #résumé .resume-glyph>p {
+  margin: 16px auto;
   text-align: center;
+  text-align-last: center !important;
   width: 115px;
   display: flex;
   justify-content: center;
@@ -55,6 +54,7 @@
   height: 100px;
   border: 2px solid #000;
   border-radius: 50%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,9 +62,7 @@
 }
 
 #résumé .resume-content {
-  margin: 0 10px 0 30px;
   display: flex;
-  flex-flow: column;
 }
 
 #résumé .resume-header {
@@ -83,6 +81,17 @@
   font-size: 15px;
 }
 
+#résumé .resume-left {
+  text-align: left;
+  text-align-last: left;
+  max-width: 75%;
+}
+
+#résumé .resume-right {
+  text-align: right;
+  text-align-last: right;
+}
+
 #résumé .resume-desc {
   font-size: 15px;
   margin-top: 3px;
@@ -98,7 +107,27 @@
   justify-content: space-between;
 }
 
-iframe {
-  border: none;
-  /*width: 100%;*/
+@media screen and (orientation:portrait) {
+  .resume-row {
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  .resume-content {
+    margin: 0 10px;
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .resume-row {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  .resume-content {
+    margin: 0 10px 0 30px;
+    display: flex;
+    flex-flow: column;
+    transition: height 0.5s;
+  }
 }

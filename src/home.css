@@ -163,7 +163,7 @@
 @media screen and (orientation:landscape) {
   #home .section-image {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
   #home .section-content {
     /*margin-bottom: 3rem;*/
