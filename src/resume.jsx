@@ -28,7 +28,7 @@ class Resume extends Component {
           programs: [
             {
               name: "Bachelor of Science in Mechanical Engineering",
-              duration: "Sept 2007 - June 2011",
+              duration: "Sept 2007 - Jun 2011",
               desc: "Graduated from a ABET-accredited mechanical engineering program with an elective emphasis in robotic algorithms and structural engineering. Participated in UCSB chapters of Society for the Advancement of Chicano and Native Americans (SACNAS) and the American Society of Mechanical Engineers (ASME)."
             }
           ]
@@ -47,7 +47,7 @@ class Resume extends Component {
           place: "University of California, Santa Barbara (UCSB)",
           location: "Santa Barbara, CA",
           title: "Lab Teaching Assistant for ME 10: Engineering Graphics",
-          duration: "Mar 2011 - June 2011",
+          duration: "Mar 2011 - Jun 2011",
           desc: "Graded assignments and assisted students with computer-aided design coursework for up to eight hours per week."
 
         },
@@ -99,7 +99,7 @@ class Resume extends Component {
           </a>
         </div>
         <div className="resume-row">
-          <div className="resume-glyph">
+          <div className="resume-glyph" onClick={this.toggleContent}>
             <i className="fa fa-graduation-cap"></i>
             <p>education</p>
           </div>
@@ -139,14 +139,17 @@ class Resume extends Component {
     );
   }
 
+  toggleContent() {
+    console.log("lol");
+  }
 
   getEduPrograms(eduIndex) {
     return this.state.education[eduIndex].programs.map(program => {
       return (
         <div key={program.name}>
           <p className="resume-secondary">
-            <span>{program.name}</span>
-            <span>{program.duration}</span>
+            <span className="resume-left">{program.name}</span>
+            <span className="resume-right">{program.duration}</span>
           </p>
           <p className="resume-desc">{program.desc}</p>
         </div>
@@ -159,8 +162,8 @@ class Resume extends Component {
       return (
         <div key={edu.place}>
           <p className="resume-header">
-            <span className="resume-primary">{edu.place}</span>
-            <span>{edu.location}</span>
+            <span className="resume-primary resume-left">{edu.place}</span>
+            <span className="resume-right">{edu.location}</span>
           </p>
           {this.getEduPrograms(index)}
         </div>
@@ -173,12 +176,12 @@ class Resume extends Component {
       return (
         <div key={job.place}>
           <p className="resume-header">
-            <span className="resume-primary">{job.place}</span>
-            <span>{job.location}</span>
+            <span className="resume-primary resume-left">{job.place}</span>
+            <span className="resume-right">{job.location}</span>
           </p>
           <p className="resume-secondary">
-            <span>{job.title}</span>
-            <span>{job.duration}</span>
+            <span className="resume-left">{job.title}</span>
+            <span className="resume-right">{job.duration}</span>
           </p>
           <p className="resume-desc">{job.desc}</p>
         </div>
@@ -191,12 +194,12 @@ class Resume extends Component {
       return (
         <div key={vol.program}>
           <p className="resume-header">
-            <span className="resume-primary">{vol.program}</span>
-            <span>{vol.location}</span>
+            <span className="resume-primary resume-left">{vol.program}</span>
+            <span className="resume-right">{vol.location}</span>
           </p>
           <p className="resume-secondary">
-            <span>{vol.title}</span>
-            <span>{vol.duration}</span>
+            <span className="resume-left">{vol.title}</span>
+            <span className="resume-right">{vol.duration}</span>
           </p>
           <p className="resume-desc">{vol.desc}</p>
         </div>

@@ -27,11 +27,11 @@ class Thumbnail extends Component {
 
   render() {
     return (
-      <div className="thumbnail-16-9" id={this.props.thumb}>
-        <div className="thumbnail-16-9-overlay">
-          <a target="_blank" href={this.props.href}>
+      <a className="thumbnail-16-9" id={this.props.thumb} target="_blank" href={this.props.href}>
+        <a className="thumbnail-16-9-overlay" target="_blank" href={this.props.href}>
+          <div target="_blank" href={this.props.href} title={this.props.name}>
             <h4>{this.props.name}</h4>
-          </a>
+          </div>
           <p className="tech-icons">
             <a target="_blank" href={this.props.github}>
               <span className="icon-github-circle" title="Git with GitHub"></span>
@@ -41,8 +41,13 @@ class Thumbnail extends Component {
           <p className="thumbnail-desc">
             {this.props.desc}
           </p>
-        </div>
-      </div>
+          <p className="thumbnail-footer">
+            <a target="_blank" href={this.props.github}>
+              <span className="icon-github-circle" title="Git with GitHub"></span> github repo
+            </a>
+          </p>
+        </a>
+      </a>
     );
   }
 
