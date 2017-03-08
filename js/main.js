@@ -9,13 +9,14 @@ $(document).ready(function () {
     $(window).bind('scroll', function () {
         windowTop = $(window).scrollTop();
         var navWindowTop = navTop - windowTop;
-
+        // dock navbar when scrolled to/past its original position
         if (navWindowTop <= 0) {
             $('.navbar').addClass('navbar-docked');
         } else {
-            $('.navbar').removeClass('navbar-docked');
+            $('.navbar').removeClass('navbar-docked'); // undock navbar when scrolling back
         }
 
+        // highlight "current" section on display in navbar
         for (var i=1; i<sections.length; i++) {
           if (i !== sections.length-1) {
             if (windowTop > (sections[i-1].top + 2*sections[i].top)/3 && windowTop <= (sections[i].top + 2*sections[i+1].top)/3) {
@@ -23,7 +24,7 @@ $(document).ready(function () {
             } else {
               $(".navbar-button:eq("+(i)+")").removeClass('navbar-current');
             }
-          } else {
+          } else { // to detect the last section (from older code, but not sure if it's still needed)
             if (windowTop > (sections[i-1].top + 2*sections[i].top)/3) {
               $(".navbar-button:eq("+(i)+")").addClass('navbar-current');
             } else {
@@ -44,7 +45,7 @@ $(document).ready(function () {
     })
 
     function scrollTo(elementID) {
-      console.log(elementID);
+      // console.log(elementID);
         $('html, body').animate({
             scrollTop: $(elementID).offset().top - $('.navbar').height()
         }, 1000);
@@ -55,6 +56,5 @@ $(document).ready(function () {
       angle *= -1;
       $("#about-image").css({transform: "rotate("+ angle +"deg)"});
     }, 1000)
-
 
 });
