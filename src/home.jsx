@@ -70,6 +70,14 @@ class Home extends Component {
                 </div>
               </div>
             </div>
+            <div className="home-resume-links">
+              <a className="a-button" target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpM0xkVEFWbUNqQ2s/view">
+                <i className="fa fa-file-pdf-o"></i> get my résumé as a PDF
+              </a>
+              <a className="a-button" target="_blank" href="https://drive.google.com/file/d/0B5Sc-S5t74hpMzFRdS1PWlZ3TGM/view?usp=sharing">
+                <i className="fa fa-file-text-o"></i> and/or in plain text format
+              </a>
+            </div>
           </div>
         <Nav />
         </div>
