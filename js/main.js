@@ -1,7 +1,9 @@
 $(document).ready(function () {
-  var navTop = $('#nav').offset().top;
   var sections = []
-  var windowTop = $(window).scrollTop();
+
+  var navTop = $('#nav').offset().top,
+      windowTop = $(window).scrollTop();
+      
   $("section").each(function() {
     sections.push({id: "#" + $(this).attr('id'), top: $(this).offset().top})
   });
