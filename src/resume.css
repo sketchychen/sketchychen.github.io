@@ -63,6 +63,7 @@
 
 #résumé .resume-content {
   display: flex;
+  overflow: hidden;
 }
 
 #résumé .resume-header {
