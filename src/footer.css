@@ -12,8 +12,8 @@ footer {
 }
 
 #pic {
-  /*background: url("") no-repeat center;*/
-  background-size: contain;
+  background: url("../public/img/linkedin-me.jpg") no-repeat center;
+  background-size: cover;
   width: 150px;
   height: 150px;
   border: 2px solid #919BAC;

@@ -61,7 +61,7 @@ class Projects extends Component {
           name: "Taste Saver",
           img: "../public/img/portfolio/taste-saver.png",
           thumb: "thumbnail-tastesaver",
-          url: "",
+          url: "https://taste-saver.herokuapp.com/",
           github: "https://github.com/Skylocke/picky-eater-hackathon",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku"],

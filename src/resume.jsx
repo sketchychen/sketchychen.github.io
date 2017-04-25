@@ -13,7 +13,7 @@ class Resume extends Component {
             {
               name: "Web Development Immersive",
               duration: "Nov 2016 - Feb 2017",
-              desc: "420 hours of instruction in full-stack development with HTML, CSS, Javascript, SQL, and Python, producing four major projects throughout the course."
+              desc: "Completed 480 hours of instruction in full-stack development with HTML, CSS, Javascript, SQL, and Python, producing four major projects throughout the course."
             },
             {
               name: "Data Science Part-time",
@@ -35,6 +35,14 @@ class Resume extends Component {
         }
       ],
       experience: [
+        {
+          place: "General Assembly Seattle",
+          location: "Seattle, WA",
+          title: "Web Development Immersive Student",
+          duration: "Nov 2016 - Feb 2017",
+          desc: "Completed 480 hours of instruction in full-stack development with HTML, CSS, Javascript, SQL, and Python, producing four major projects throughout the course."
+
+        },
         {
           place: "Boeing Commercial Airplanes (BCA)",
           location: "Long Beach, CA",
