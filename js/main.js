@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   var navTop = $('#nav').offset().top;
   var sections = []
   var windowTop = $(window).scrollTop();
@@ -6,7 +6,7 @@ $(document).ready(function () {
     sections.push({id: "#" + $(this).attr('id'), top: $(this).offset().top})
   });
 
-    $(window).bind('scroll', function () {
+    $(window).on('scroll', function () {
         windowTop = $(window).scrollTop();
         var navWindowTop = navTop - windowTop;
         // dock navbar when scrolled to/past its original position
