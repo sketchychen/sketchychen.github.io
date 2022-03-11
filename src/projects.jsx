@@ -12,7 +12,7 @@ class Projects extends Component {
           name: "Laser Eye Beam Simulator",
           img: "../public/img/portfolio/laser-simulator.gif",
           thumb: "thumbnail-lasersimulator",
-          github: "https://github.com/skylocke/laser-eye-beam-simulator",
+          github: "https://github.com/sketchychen/laser-eye-beam-simulator",
           url: "http://rschen.co/laser-eye-beam-simulator/",
           tech: ["HTML5", "CSS3", "JavaScript", "A-Frame VR"],
           desc: "now you, too, can pretend to have laser eyes, provided you're using a smart phone with a VR peripheral"
@@ -22,7 +22,7 @@ class Projects extends Component {
           img: "../public/img/portfolio/duckface.png",
           thumb: "thumbnail-duckface",
           url: "http://duckface.herokuapp.com/",
-          github: "https://github.com/skylocke/duck-face",
+          github: "https://github.com/sketchychen/duck-face",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "PostgreSQL", "Heroku"],
           desc: "bringing duckface back by auto-superimposing duck beaks over faces in your photos for you"
@@ -32,7 +32,7 @@ class Projects extends Component {
           img: "../public/img/portfolio/subtvtle.png",
           thumb: "thumbnail-subtvtle",
           url: "",
-          github: "https://github.com/skylocke/ng-mongoose-subtitles",
+          github: "https://github.com/sketchychen/ng-mongoose-subtitles",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "AngularJS", "MongoDB", "Adobe Illustrator"],
           desc: "add your own spin to the subtitles for the meme-infamous scene from the movie Downfall (2004)"
@@ -42,7 +42,7 @@ class Projects extends Component {
           img: "../public/img/portfolio/8-bit-chat.gif",
           thumb: "thumbnail-8bitchat",
           url: "http://eightbitchat.herokuapp.com/",
-          github: "https://github.com/skylocke/8-bit-chat",
+          github: "https://github.com/sketchychen/8-bit-chat",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku", "Adobe Photoshop"],
           desc: "talk to other fellow colorful rectangle people in this 8-bit-styled avatar chat room"
@@ -52,7 +52,7 @@ class Projects extends Component {
           img: "thumbnail-guberoldberg",
           thumb: "thumbnail-guberoldberg",
           url: "http://guberoldberg.herokuapp.com/",
-          github: "https://github.com/Skylocke/gube-roldberg",
+          github: "https://github.com/Sketchychen/gube-roldberg",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku"],
           desc: "make simple rube-goldberg-esque contraptions with the gube roldberg interface"
@@ -62,7 +62,7 @@ class Projects extends Component {
           img: "../public/img/portfolio/taste-saver.png",
           thumb: "thumbnail-tastesaver",
           url: "",
-          github: "https://github.com/Skylocke/picky-eater-hackathon",
+          github: "https://github.com/Sketchychen/picky-eater-hackathon",
           tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery", "Node.js",
                 "AngularJS", "MongoDB", "Heroku"],
           desc: "catalogue recipes from around the internet with the result of a one-day hackathon collaboration"

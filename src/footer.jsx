@@ -24,12 +24,12 @@ class Footer extends Component {
               </a>
             </li>
             <li className="social-icon">
-              <a target="_blank" href="https://github.com/skylocke/">
+              <a target="_blank" href="https://github.com/sketchychen/">
                 <i className="fa fa-github" aria-hidden="true"></i>
               </a>
             </li>
             <li className="social-icon">
-              <a target="_blank" href="http://skylocke.tumblr.com/">
+              <a target="_blank" href="http://sketchychen.tumblr.com/">
                 <i className="fa fa-tumblr" aria-hidden="true"></i>
               </a>
             </li>
