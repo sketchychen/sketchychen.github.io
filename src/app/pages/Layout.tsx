@@ -1,23 +1,53 @@
 import { ReactElement } from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link } from 'react-router-dom';
 
-export default function Layout(): ReactElement {
+import '../../styles/layout.scss';
+import { PageType } from '../index';
+
+
+interface HeaderPropType {
+    pages: Array<PageType>,
+}
+
+function Header (props: HeaderPropType): ReactElement {
     return (
-        <div className="container">
+        <header className='layout-header'>
             <nav>
                 <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/dev">Developer</Link>
-                    </li>
-                    <li>
-                        <Link to="/art">Artist</Link>
-                    </li>
+                    {
+                        props.pages.map((page: PageType) => (
+                            <li>
+                                <Link to={ page.path }>
+                                    { page.title }
+                                </Link>
+                            </li>
+                        ))
+                    }
                 </ul>
             </nav>
+        </header>
+    );
+}
+
+function Footer(): ReactElement {
+    return (
+        <footer className='layout-footer'>
+            YEEHAW
+        </footer>
+    );
+}
+
+
+interface LayoutProps {
+    pages: Array<PageType>,
+}
+
+export default function Layout(props: LayoutProps): ReactElement {
+    return (
+        <div className="container">
+            <Header pages={ props.pages } />
             <Outlet />
+            <Footer />
         </div>
     );
 }

@@ -1,9 +1,10 @@
 import { ReactElement } from 'react';
 
+
 export default function Developer(): ReactElement {
     return(
-        <div className="App">
-            <header className="App-header">
+        <div className="page">
+            <header className="page-header">
                 the Developer
             </header>
         </div>

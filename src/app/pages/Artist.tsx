@@ -1,9 +1,10 @@
 import { ReactElement } from 'react';
 
+
 export default function Artist(): ReactElement {
     return(
-        <div className="App">
-            <header className="App-header">
+        <div className="page">
+            <header className="page-header">
                 the Artist
             </header>
         </div>
