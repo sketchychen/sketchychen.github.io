@@ -1,12 +1,12 @@
 import { ReactElement } from 'react';
 
+import Page from '../components/Page';
+
 
 export default function Artist(): ReactElement {
     return(
-        <div className="page">
-            <header className="page-header">
-                the Artist
-            </header>
-        </div>
+        <Page title='Artist'>
+            <div>illustrations here</div>
+        </Page>
     );
 };

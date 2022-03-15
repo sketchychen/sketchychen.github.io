@@ -1,5 +1,8 @@
+$layout-bgcolor: #7a8bd4;
+$layout-header-bgcolor: rgb(194, 208, 253);
+
 .layout {
-    background-color: #7a8bd4;
+    background-color: $layout-bgcolor;
     height: 100vh;
     & h1 {
         color: green;
@@ -11,6 +14,7 @@
 
 .layout-header {
     grid-area: header;
+    background-color: $layout-header-bgcolor;
 }
 
 .layout-body {
@@ -22,4 +26,5 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    background-color: $layout-header-bgcolor;
 }

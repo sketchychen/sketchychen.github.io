@@ -1,0 +1,16 @@
+$header-nav-bgcolor: beige;
+
+.header-nav {
+    background-color: $header-nav-bgcolor;
+    width: 100%;
+}
+
+.header-nav-container {
+    width: 100%;
+    display: flex;
+}
+
+.header-nav-link {
+    list-style-type: none;
+    margin: 10pt;
+}
