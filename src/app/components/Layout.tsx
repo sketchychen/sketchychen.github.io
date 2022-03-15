@@ -11,11 +11,11 @@ function Footer(): ReactElement {
             YEEHAW
         </footer>
     );
-}
+};
 
 interface LayoutProps {
     pages: Array<PageType>,
-}
+};
 
 export default function Layout(props: LayoutProps): ReactElement {
     return (
@@ -28,4 +28,4 @@ export default function Layout(props: LayoutProps): ReactElement {
             <div className='layout-body'><Outlet /></div>
         </div>
     );
-}
+};

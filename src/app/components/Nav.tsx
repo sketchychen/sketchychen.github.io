@@ -8,7 +8,7 @@ export type PageType = { title: string, path: string, element?: ReactElement };
 
 interface NavPropsType {
     pages: Array<PageType>,
-}
+};
 
 export default function Nav(props: NavPropsType) {
     return (
@@ -26,5 +26,4 @@ export default function Nav(props: NavPropsType) {
             </ul>
         </nav>
     );
-}
-
+};

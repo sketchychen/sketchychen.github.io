@@ -10,12 +10,12 @@ type GalleryItemType = {
     image: string,
     desc?: string,
     date: Date,
-}
+};
 
 interface GalleryPropsType {
     tags: Array<string>,
     items: Array<GalleryItemType>,
-}
+};
 
 export default function Gallery(props: GalleryPropsType) {
     return (
@@ -32,4 +32,4 @@ export default function Gallery(props: GalleryPropsType) {
             </div>
         </div>
     );
-}
+};
