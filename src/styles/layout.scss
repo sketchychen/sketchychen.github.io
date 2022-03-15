@@ -1,7 +1,7 @@
 $layout-bgcolor: #7a8bd4;
 $layout-header-bgcolor: rgb(194, 208, 253);
 
-.layout {
+.layout-container {
     background-color: $layout-bgcolor;
     height: 100vh;
     & h1 {

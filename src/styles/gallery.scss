@@ -1,0 +1,23 @@
+.gallery-container {
+    height: 100%;
+}
+
+.gallery-controls {
+    height: 200px;
+}
+
+.gallery-body {
+    display: grid;
+    gap: 50px;
+}
+
+.gallery-item {
+    background-color: rgb(31, 30, 34);
+    width: 500px;
+    height: 600px;
+}
+
+.gallery-thumbnail {
+    width: 500px;
+    height: 400px;
+}

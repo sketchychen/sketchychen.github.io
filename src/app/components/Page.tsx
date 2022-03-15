@@ -1,5 +1,7 @@
 import { ReactElement } from 'react';
 
+import '../../styles/page.scss';
+
 
 export interface PagePropsType {
     title: string,
@@ -8,11 +10,13 @@ export interface PagePropsType {
 
 export default function Page(props: PagePropsType): ReactElement {
     return(
-        <div className="page">
-            <header className="page-header">
+        <div className="page-container">
+            <div className="page-banner">
                 { props.title }
-            </header>
-            { props.children }
+            </div>
+            <div className="page-body">
+                { props.children }
+            </div>
         </div>
     );
 };

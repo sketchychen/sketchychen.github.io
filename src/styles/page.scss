@@ -1,0 +1,18 @@
+.page-container {
+    display: grid;
+    height: 100%;
+}
+
+.page-banner {
+    grid-area: banner;
+}
+.page-body {
+    grid-area: body;
+}
+
+@media only screen and (orientation: landscape) {
+    .page-container {
+        grid-template-areas:
+        'banner body body body body body';
+    }
+}

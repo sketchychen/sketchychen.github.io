@@ -19,7 +19,7 @@ interface LayoutProps {
 
 export default function Layout(props: LayoutProps): ReactElement {
     return (
-        <div className='layout'>
+        <div className='layout-container'>
             <header className='layout-header'>
                 <div className='banner'>HELLO</div>
                 <Nav { ...props } />
