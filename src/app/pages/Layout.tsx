@@ -12,6 +12,7 @@ interface HeaderPropType {
 function Header (props: HeaderPropType): ReactElement {
     return (
         <header className='layout-header'>
+            <div className='banner'>HELLO</div>
             <nav>
                 <ul>
                     {
@@ -37,17 +38,16 @@ function Footer(): ReactElement {
     );
 }
 
-
 interface LayoutProps {
     pages: Array<PageType>,
 }
 
 export default function Layout(props: LayoutProps): ReactElement {
     return (
-        <div className="container">
+        <div className='layout'>
             <Header pages={ props.pages } />
-            <Outlet />
             <Footer />
+            <div className='layout-body'><Outlet /></div>
         </div>
     );
 }

@@ -21,7 +21,10 @@ export default function App() {
                 <Route path="/" element={<Layout pages={ pages } />}>
                     {
                         pages.map((page: PageType) => (
-                            <Route path={ page.path } element={ page.element }>
+                            <Route
+                                path={ page.path }
+                                element={ page.element }
+                            >
                                 { page.title }
                             </Route>
                         ))

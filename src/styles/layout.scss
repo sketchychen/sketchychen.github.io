@@ -1,9 +1,25 @@
-.container {
+.layout {
     background-color: #7a8bd4;
+    height: 100vh;
     & h1 {
         color: green;
     }
     &__text {
         color: blue;
     }
+}
+
+.layout-header {
+    grid-area: header;
+}
+
+.layout-body {
+    height: 100%;
+}
+
+.layout-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
