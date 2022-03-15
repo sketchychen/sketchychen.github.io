@@ -1,12 +1,9 @@
 import { ReactElement } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import { Layout } from './components';
 import { PageType } from './components/Nav';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Developer from './pages/Developer';
-import Artist from './pages/Artist';
-import About from './pages/About';
+import { About, Artist, Developer, Home } from './pages';
 
 
 const pages: Array<PageType> = [

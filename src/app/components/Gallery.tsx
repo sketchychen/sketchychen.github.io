@@ -4,17 +4,17 @@ import { ReactElement } from 'react';
 import '../../styles/gallery.scss';
 
 
-interface GalleryPropsType {
-    tags: Array<string>,
-    items: Array<any>, // replace <any> with <QueryItem> class or something
-}
-
 type GalleryItemType = {
     title: string,
     tags: Array<string>,
     image: string,
     desc?: string,
     date: Date,
+}
+
+interface GalleryPropsType {
+    tags: Array<string>,
+    items: Array<GalleryItemType>,
 }
 
 export default function Gallery(props: GalleryPropsType) {

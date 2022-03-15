@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import Page from '../components/Page';
+import { Page, Gallery } from '../components';
 
 
 export default function Developer(): ReactElement {
