@@ -2,7 +2,8 @@ import { ReactElement } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
 import '../../styles/layout.scss';
-import Nav, { PageType } from './Nav';
+import Nav, { NavItemType } from './Nav';
+import { PagePropsType } from './Page';
 
 
 function Footer(): ReactElement {
@@ -14,7 +15,7 @@ function Footer(): ReactElement {
 };
 
 interface LayoutProps {
-    pages: Array<PageType>,
+    pages: Array<NavItemType>,
 };
 
 export default function Layout(props: LayoutProps): ReactElement {
@@ -25,7 +26,9 @@ export default function Layout(props: LayoutProps): ReactElement {
                 <Nav { ...props } />
             </header>
             <Footer />
-            <div className='layout-body'><Outlet /></div>
+            <div className='layout-body'>
+                <Outlet />
+            </div>
         </div>
     );
 };

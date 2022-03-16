@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import Page from '../components/Page';
+import Page from 'app/components/Page';
 
 
 export default function Artist(): ReactElement {

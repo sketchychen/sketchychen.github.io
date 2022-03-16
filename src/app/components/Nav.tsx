@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 import '../../styles/nav.scss';
 
 
-export type PageType = { title: string, path: string, element?: ReactElement };
+export type NavItemType = {
+    title: string,
+    path: string,
+};
 
 interface NavPropsType {
-    pages: Array<PageType>,
+    pages: Array<NavItemType>,
 };
 
 export default function Nav(props: NavPropsType) {
@@ -15,7 +18,7 @@ export default function Nav(props: NavPropsType) {
         <nav className='header-nav'>
             <ul className='header-nav-container'>
                 {
-                    props.pages.map((page: PageType) => (
+                    props.pages.map((page: NavItemType) => (
                         <li className='header-nav-link' key={ page.title }>
                             <Link to={ page.path }>
                                 { page.title }

@@ -5,7 +5,7 @@ import '../../styles/page.scss';
 
 export interface PagePropsType {
     title: string,
-    children: ReactElement,
+    children: ReactElement | ReactElement[],
     bannerImageUrl?: string,
 };
 
