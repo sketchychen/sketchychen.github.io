@@ -1,35 +1,56 @@
-import { Query } from '@testing-library/react';
-import { ReactElement } from 'react';
-
+import { render } from '@testing-library/react';
+import { Component, FormEvent } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import '../../styles/gallery.scss';
 
 
-type GalleryItemType = {
+type GalleryItem = {
     title: string,
     tags: Array<string>,
-    image: string,
+    imgUrl: string,
     desc?: string,
     date: Date,
 };
 
-interface GalleryPropsType {
+interface GalleryProps {
     tags: Array<string>,
-    items: Array<GalleryItemType>,
+    items: Array<GalleryItem>,
 };
 
-export default function Gallery(props: GalleryPropsType) {
-    return (
-        <div className='gallery-container'>
-            <div className='gallery-controls'></div>
-            <div className='gallery-body'>
-                {
-                    props.items.map((item: GalleryItemType) => (
-                        <div className='gallery-item' key={ item.title }>
-                            <image className='gallery-item-thumbnail' />
-                        </div>
-                    ))
-                }
+type GalleryState = {
+    text: string,
+};
+
+export default class Gallery extends Component<GalleryProps, GalleryState> {
+    state = {
+        text: '',
+    };
+
+    handleSubmit = (event: FormEvent) => {
+        let [searchParams, setSearchParams] = useSearchParams();
+        event.preventDefault();
+
+    };
+    render() {
+        return (
+            <div className='gallery-container'>
+                <div className='gallery-controls'>
+                    <form onSubmit={this.handleSubmit}></form>
+                </div>
+                <div className='gallery-body'>
+                    {
+                        this.props.items.map((item: GalleryItem) => (
+                            <div className='gallery-item' key={ item.imgUrl }>
+                                <img
+                                    className='gallery-item-thumbnail'
+                                    style={ {backgroundImage: `url(${item.imgUrl})`} }
+                                    alt={ item.desc }
+                                />
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 };

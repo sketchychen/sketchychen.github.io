@@ -1,18 +1,34 @@
 .page-container {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     height: 100%;
+
+    border: 1px;
 }
 
 .page-banner {
-    grid-area: banner;
+    width: 20%;
+    min-width: 200px;
+    max-width: 400px;
+
+    /* for debugging */
+    border: 1px dotted blue;
 }
 .page-body {
-    grid-area: body;
+    width: 100%;
+
+    /* for debugging */
+    border: 1px dotted blue;
 }
 
-@media only screen and (orientation: landscape) {
+@media (max-width: 1000px) {
     .page-container {
-        grid-template-areas:
-        'banner body body body body body';
+        flex-direction: column;
+    }
+
+    .page-banner {
+        width: 100%;
+        height: 10%;
     }
 }

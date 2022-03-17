@@ -1,9 +1,7 @@
 import { ReactElement } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-
 import '../../styles/layout.scss';
-import Nav, { NavItemType } from './Nav';
-import { PagePropsType } from './Page';
+import Nav, { NavItem } from './Nav';
 
 
 function Footer(): ReactElement {
@@ -15,7 +13,7 @@ function Footer(): ReactElement {
 };
 
 interface LayoutProps {
-    pages: Array<NavItemType>,
+    pages: Array<NavItem>,
 };
 
 export default function Layout(props: LayoutProps): ReactElement {

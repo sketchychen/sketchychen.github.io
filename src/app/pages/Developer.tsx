@@ -1,14 +1,20 @@
 import { ReactElement } from 'react';
 import { isPropertySignature } from 'typescript';
-
 import { Page, Gallery } from 'app/components';
-import { PagePropsType } from 'app/components/Page';
+
 
 const test = [
     {
         title: 'hii',
         tags: ['react', 'html', 'javascript'],
-        image: 'ladeeda.jpg',
+        imgUrl: 'ladeeda.jpg',
+        desc: 'pretend you have laser eyes',
+        date: new Date('2016-06-02'),
+    },
+    {
+        title: 'hiii',
+        tags: ['react', 'html', 'javascript'],
+        imgUrl: 'ladeeda copy 2.jpg',
         desc: 'pretend you have laser eyes',
         date: new Date('2016-06-02'),
     }

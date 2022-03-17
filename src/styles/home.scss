@@ -1,0 +1,25 @@
+.home-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home-nav-item {
+    list-style-type: none;
+    height: 100%;
+    width: 400px;
+    margin: 0 10px;
+
+    /* for debugging */
+    border: 1px dotted green;
+}
+
+@media (max-width: 1000px) {
+    .home-container {
+        flex-direction: column;
+    }
+
+}

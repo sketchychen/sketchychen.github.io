@@ -7,17 +7,28 @@
 }
 
 .gallery-body {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
     gap: 50px;
+
+    /* for debugging */
+    border: 1px dotted green;
 }
 
 .gallery-item {
-    background-color: rgb(31, 30, 34);
-    width: 500px;
-    height: 600px;
+    width: 300px;
+    height: 300px;
+
+    /* for debugging */
+    border: 1px dotted coral;
 }
 
-.gallery-thumbnail {
-    width: 500px;
-    height: 400px;
+.gallery-item-thumbnail {
+    // background-color: rgb(31, 30, 34);
+    width: 300px;
+    height: 200px;
+
+    /* for debugging */
+    border: 1px dotted cyan;
 }

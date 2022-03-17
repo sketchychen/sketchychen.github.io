@@ -1,15 +1,14 @@
 import { ReactElement } from 'react';
-
 import '../../styles/page.scss';
 
 
-export interface PagePropsType {
+export interface PageProps {
     title: string,
     children: ReactElement | ReactElement[],
     bannerImageUrl?: string,
 };
 
-export default function Page(props: PagePropsType): ReactElement {
+export default function Page(props: PageProps): ReactElement {
     const bannerStyle = {
         backgroundImage: `url(${props.bannerImageUrl})`,
     };
