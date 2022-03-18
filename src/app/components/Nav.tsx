@@ -1,6 +1,5 @@
 import { ReactElement } from 'react';
-import { Link } from 'react-router-dom';
-import '../../styles/nav.scss';
+import { NavLink } from 'react-router-dom';
 
 
 export type NavItem = {
@@ -19,9 +18,9 @@ export default function Nav(props: NavProps) {
                 {
                     props.pages.map((page: NavItem) => (
                         <li className='header-nav-item' key={ page.title }>
-                            <Link to={ page.path }>
+                            <NavLink className='nav-block' to={ page.path }>
                                 { page.title }
-                            </Link>
+                            </NavLink>
                         </li>
                     ))
                 }

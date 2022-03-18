@@ -1,6 +1,5 @@
 import { ReactElement } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import '../../styles/layout.scss';
 import Nav, { NavItem } from './Nav';
 
 
@@ -20,7 +19,7 @@ export default function Layout(props: LayoutProps): ReactElement {
     return (
         <div className='layout-container'>
             <header className='layout-header'>
-                <div className='banner'>HELLO</div>
+                <div className='layout-banner'>HELLO</div>
                 <Nav { ...props } />
             </header>
             <Footer />

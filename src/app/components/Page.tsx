@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import '../../styles/page.scss';
 
 
 export interface PageProps {

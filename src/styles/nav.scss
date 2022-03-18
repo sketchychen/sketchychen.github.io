@@ -7,10 +7,24 @@ $header-nav-bgcolor: beige;
 
 .header-nav-container {
     width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 .header-nav-item {
     list-style-type: none;
-    margin: 10pt;
+    margin: 0 10pt;
+    height: 40px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    /* for debugging */
+    border: 1px dotted green;
+}
+
+.header-nav-item > a {
+    padding: 0 30px;
 }

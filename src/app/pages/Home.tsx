@@ -1,6 +1,5 @@
 import { ReactElement } from 'react';
-import { Link } from 'react-router-dom';
-import '../../styles/home.scss';
+import { NavLink } from 'react-router-dom';
 
 
 const pages = [
@@ -16,16 +15,16 @@ export default function Home(): ReactElement {
             {
                 pages.map((page) => (
                     <li
-                        className='home-nav-item'
+                        className='home-menu-item afadeindown astagger'
                         key={ page.title }
                         style={ {
                             backgroundSize: 'cover',
                             backgroundImage: `url(${page.imgUrl})`
                         } }
                     >
-                        <Link to={ page.path }>
+                        <NavLink to={ page.path }>
                             { page.title }
-                        </Link>
+                        </NavLink>
                     </li>
                 ))
             }

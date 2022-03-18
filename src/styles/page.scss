@@ -22,7 +22,7 @@
     border: 1px dotted blue;
 }
 
-@media (max-width: 1000px) {
+@include breakpoint(mobile) {
     .page-container {
         flex-direction: column;
     }

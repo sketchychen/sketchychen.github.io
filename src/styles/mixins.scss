@@ -1,0 +1,7 @@
+@mixin breakpoint($size) {
+    @if $size == mobile {
+        @media (max-width: 799px), (orientation: portrait) {
+            @content;
+        }
+    }
+}

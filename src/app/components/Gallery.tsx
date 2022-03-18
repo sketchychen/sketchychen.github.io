@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
 import { Component, FormEvent } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import '../../styles/gallery.scss';
 
 
 type GalleryItem = {
