@@ -61,7 +61,7 @@ export default function Gallery(props: GalleryProps) {
                             key={ tag }
                             htmlFor={ tag }
                         >
-                            { tag }
+                            <span>{ tag }</span>
                             <input
                                 type='checkbox'
                                 id={ tag }

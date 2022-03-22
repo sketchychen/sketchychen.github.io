@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import { isPropertySignature } from 'typescript';
 import { Page, Gallery } from 'app/components';
 
 

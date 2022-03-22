@@ -5,16 +5,22 @@
 }
 
 .gallery-controls {
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .gallery-tag {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+
+    border-radius: 20px;
     border: 1px dotted cyan;
-    border-radius: 5px;
-    overflow: auto;
 }
 
-.gallery-tag + .active {
+.gallery-tag.active {
     background-color: rgb(0, 168, 50);
 }
 
