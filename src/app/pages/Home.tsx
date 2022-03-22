@@ -1,15 +1,10 @@
 import { ReactElement } from 'react';
 import { NavLink } from 'react-router-dom';
+import { PAGES } from 'app/pages';
 
-
-const pages = [
-    { path: '/dev', title: 'Developer', imgUrl: '333.jpg' },
-    { path: '/art', title: 'Artist', imgUrl: '333.jpg' },
-    { path: '/me', title: 'About', imgUrl: '333.jpg' },
-    { path: '/socials', title: 'Socials', imgUrl: '333.jpg' },
-]
 
 export default function Home(): ReactElement {
+    const pages = PAGES.filter((page) => page.path != '/');
     return(
         <ul className='home-container'>
             {

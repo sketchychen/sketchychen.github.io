@@ -20,8 +20,8 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    /* for debugging */
-    border: 1px solid red;
+
+    background: rgb(221, 221, 221);
 }
 
 .layout-body {
@@ -37,8 +37,6 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    // background-color: $layout-header-bgcolor;
 
-    /* for debugging */
-    border: 1px solid red;
+    background: rgb(221, 221, 221);
 }

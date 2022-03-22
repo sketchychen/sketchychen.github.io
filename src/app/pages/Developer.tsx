@@ -6,16 +6,43 @@ import { Page, Gallery } from 'app/components';
 const test = [
     {
         title: 'hii',
-        tags: ['react', 'html', 'javascript'],
+        tags: new Set(['react', 'html', 'javascript']),
         imgUrl: 'ladeeda.jpg',
-        desc: 'pretend you have laser eyes',
+        desc: "['react', 'html', 'javascript']",
         date: new Date('2016-06-02'),
     },
     {
         title: 'hiii',
-        tags: ['react', 'html', 'javascript'],
+        tags: new Set(['html', 'javascript']),
         imgUrl: 'ladeeda copy 2.jpg',
-        desc: 'pretend you have laser eyes',
+        desc: "['html', 'javascript']",
+        date: new Date('2016-06-02'),
+    },
+    {
+        title: 'hiiii',
+        tags: new Set(['react', 'javascript']),
+        imgUrl: 'ladeeda copy 3.jpg',
+        desc: "['react', 'javascript']",
+        date: new Date('2016-06-02'),
+    },
+    {
+        title: 'hiiiiii',
+        tags: new Set(['react', 'html', 'javascript']),
+        imgUrl: 'ladeeda copy 4.jpg',
+        desc: "['react', 'html', 'javascript']",
+        date: new Date('2016-06-02'),
+    },    {
+        title: 'hiiiiiii',
+        tags: new Set(['react', 'html', 'javascript']),
+        imgUrl: 'ladeeda copy 5.jpg',
+        desc: "['react', 'html', 'javascript']",
+        date: new Date('2016-06-02'),
+    },
+    {
+        title: 'hiiiiiiiii',
+        tags: new Set(['react', 'html', 'javascript']),
+        imgUrl: 'ladeeda copy 6.jpg',
+        desc: "['react', 'html', 'javascript']",
         date: new Date('2016-06-02'),
     }
 ];
@@ -23,8 +50,7 @@ const test = [
 export default function Developer(): ReactElement {
     return(
         <Page title='Developer'>
-            <div>uuuuh coding projects go here</div>
-            <Gallery items={ test } tags={ ['react', 'html', 'javascript'] } />
+            <Gallery items={ test } tags={ new Set(['react', 'html', 'javascript']) } />
         </Page>
     );
 };

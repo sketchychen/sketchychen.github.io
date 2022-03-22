@@ -1,55 +1,90 @@
-import { render } from '@testing-library/react';
-import { Component, FormEvent } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useState, ChangeEvent } from 'react';
 
 
 type GalleryItem = {
     title: string,
-    tags: Array<string>,
+    tags: Set<string>,
     imgUrl: string,
     desc?: string,
     date: Date,
 };
 
 interface GalleryProps {
-    tags: Array<string>,
+    tags: Set<string>,
     items: Array<GalleryItem>,
 };
 
 type GalleryState = {
     text: string,
+    tags: Set<string>,
 };
 
-export default class Gallery extends Component<GalleryProps, GalleryState> {
-    state = {
+export default function Gallery(props: GalleryProps) {
+    const [state, setState]: [GalleryState, Function] = useState({
         text: '',
+        tags: new Set(),
+    });
+
+    const handleCheckbox = (event: ChangeEvent<HTMLInputElement>) => {
+        const tag = event.target.name;
+        const checked = event.target.checked;
+        setState((prevState: GalleryState) => {
+            const nextTags = new Set(prevState.tags);
+            checked ? nextTags.add(tag) : nextTags.delete(tag);
+            return { ...prevState, tags: nextTags };
+        });
     };
 
-    handleSubmit = (event: FormEvent) => {
-        let [searchParams, setSearchParams] = useSearchParams();
-        event.preventDefault();
-
-    };
-    render() {
-        return (
-            <div className='gallery-container'>
-                <div className='gallery-controls'>
-                    <form onSubmit={this.handleSubmit}></form>
-                </div>
-                <div className='gallery-body'>
-                    {
-                        this.props.items.map((item: GalleryItem) => (
-                            <div className='gallery-item' key={ item.imgUrl }>
-                                <img
-                                    className='gallery-item-thumbnail'
-                                    style={ {backgroundImage: `url(${item.imgUrl})`} }
-                                    alt={ item.desc }
-                                />
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
-        );
+    const filterTags = (item: GalleryItem) => {
+        if (state.tags.size > 0) {
+            const checkedTags = Array.from(state.tags);
+            for (let i of checkedTags) {
+                if (!item.tags.has(i)) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
+
+    // const filterSearch = (item: GalleryItem) => {
+
+    // }
+
+    return (
+        <div className='gallery-container'>
+            <div className='gallery-controls'>
+                {
+                    Array.from(props.tags).map((tag: string) =>(
+                        <label
+                            className={ `gallery-tag${state.tags.has(tag)? ' active' : ''}` }
+                            key={ tag }
+                            htmlFor={ tag }
+                        >
+                            { tag }
+                            <input
+                                type='checkbox'
+                                id={ tag }
+                                name={ tag }
+                                onChange={ handleCheckbox }
+                            />
+                        </label>
+                    ))
+                }
+            </div>
+            <div className='gallery-body'>
+                {
+                    props.items.filter(filterTags).map((item: GalleryItem) => (
+                        <div className='gallery-item a-fadeindown a-stagger' key={ item.imgUrl }>
+                            <img
+                                className='gallery-item-thumbnail'
+                                style={ {backgroundImage: `url(${item.imgUrl})`} }
+                                alt={ item.desc }
+                            />
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    );
 };

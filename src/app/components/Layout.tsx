@@ -6,7 +6,7 @@ import Nav, { NavItem } from './Nav';
 function Footer(): ReactElement {
     return (
         <footer className='layout-footer'>
-            YEEHAW
+            YEEHAW i'M A FOOTER
         </footer>
     );
 };
@@ -19,7 +19,7 @@ export default function Layout(props: LayoutProps): ReactElement {
     return (
         <div className='layout-container'>
             <header className='layout-header'>
-                <div className='layout-banner'>HELLO</div>
+                <div className='layout-banner'>HOWDY I'M A HEADER</div>
                 <Nav { ...props } />
             </header>
             <Footer />
