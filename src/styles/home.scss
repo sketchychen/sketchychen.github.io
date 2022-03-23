@@ -25,6 +25,13 @@
 
 .home-menu-item > a {
     width: 100%;
+    position: relative;
+}
+
+.home-menu-item > a > span {
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
 }
 
 @include breakpoint(mobile) {

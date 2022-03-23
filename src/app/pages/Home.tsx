@@ -18,7 +18,7 @@ export default function Home(): ReactElement {
                         } }
                     >
                         <NavLink to={ page.path }>
-                            { page.title }
+                            <span>{ page.title }</span>
                         </NavLink>
                     </li>
                 ))

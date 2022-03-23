@@ -47,9 +47,17 @@ export default function Gallery(props: GalleryProps) {
         return true;
     }
 
-    // const filterSearch = (item: GalleryItem) => {
+    const debounce = (callback: Function, wait: number = 300) => {
+        let timeout: ReturnType<typeof setTimeout>;
+        return (...args: any) => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => callback(...args), wait);
+        }
+    }
 
-    // }
+    const filterItems = (items: GalleryItem[]) => {
+        return items.filter(filterTags)
+    }
 
     return (
         <div className='gallery-container'>
