@@ -1,4 +1,8 @@
-.a-fadeindown {
+@for $i from 1 to 10 {
+    .a-stagger:nth-child(#{$i}) { animation-delay: $i * 0.25s; }
+}
+
+.a-home-banner {
     opacity: 0;
     animation-name: fadeInDown;
     animation-duration: 1s;
@@ -6,12 +10,18 @@
     animation-fill-mode: forwards;
 }
 
-
-@for $i from 1 to 10 {
-    .a-stagger:nth-child(#{$i}) { animation-delay: $i * 0.25s; }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 @keyframes fadeInDown {
-    0% { opacity: 0; transform: translateY(-5%); }
-    100% { opacity: 1; transform: translateY(0%); }
+    0% {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }

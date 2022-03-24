@@ -10,7 +10,7 @@ export default function Home(): ReactElement {
             {
                 pages.map((page) => (
                     <li
-                        className='home-menu-item a-fadeindown a-stagger'
+                        className='home-menu-item a-home-banner a-stagger'
                         key={ page.title }
                         style={ {
                             backgroundSize: 'cover',

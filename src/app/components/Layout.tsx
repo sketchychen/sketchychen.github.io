@@ -22,10 +22,10 @@ export default function Layout(props: LayoutProps): ReactElement {
                 <div className='layout-banner'>HOWDY I'M A HEADER</div>
                 <Nav { ...props } />
             </header>
-            <Footer />
             <div className='layout-body'>
                 <Outlet />
             </div>
+            <Footer />
         </div>
     );
 };

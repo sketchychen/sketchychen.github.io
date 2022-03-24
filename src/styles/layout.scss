@@ -1,42 +1,32 @@
-// $layout-bgcolor: #7a8bd4;
-// $layout-header-bgcolor: rgb(194, 208, 253);
-
 .layout-container {
     overflow: hidden;
     height: 100vh;
-    position: relative;
-    & h1 {
-        color: green;
-    }
-    &__text {
-        color: blue;
-    }
+    display: flex;
+    flex-direction: column;
 }
 
 .layout-header {
-    height: 15%;
-    max-height: 400px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    height: $layout-header-height;
 
+    z-index: 10;
     background: rgb(221, 221, 221);
 }
 
 .layout-body {
+    flex: 1;
     overflow: auto;
-    height: 80%;
     border: 1px solid red;
 }
 
 .layout-footer {
     overflow: hidden;
-    height: 5%;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
+    height: $layout-footer-height;
+    z-index: 10;
     background: rgb(221, 221, 221);
 }
