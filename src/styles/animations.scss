@@ -4,10 +4,23 @@
 
 .a-home-banner {
     opacity: 0;
-    animation-name: fadeInDown;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: {
+        name: fadeInDown;
+        duration: 1s;
+        iteration-count: 1;
+        fill-mode: forwards;
+    }
+
+}
+
+.a-fadein {
+    opacity: 0;
+    animation: {
+        name: fadeIn;
+        duration: 1s;
+        iteration-count: 1;
+        fill-mode: forwards;
+    }
 }
 
 @keyframes fadeIn {

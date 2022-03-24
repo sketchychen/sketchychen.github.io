@@ -14,13 +14,12 @@
     height: $layout-header-height;
 
     z-index: 10;
-    background: rgb(221, 221, 221);
+    background-color: white;
 }
 
 .layout-body {
     flex: 1;
     overflow: auto;
-    border: 1px solid red;
 }
 
 .layout-footer {
@@ -28,5 +27,5 @@
     width: 100%;
     height: $layout-footer-height;
     z-index: 10;
-    background: rgb(221, 221, 221);
+    background-color: white;
 }

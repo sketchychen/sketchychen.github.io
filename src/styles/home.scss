@@ -11,6 +11,7 @@
 .home-menu-item {
     display: flex;
     flex: 1;
+    // border: 1px solid $banner-color;
 }
 
 .home-menu-item:nth-child(odd) {
@@ -28,12 +29,15 @@
 }
 
 .home-menu-item > a > span {
-    margin: $layout-header-height/2 40px 0 0;
+    margin: {
+        top: 100%;
+        right: 40px;
+    }
     width: 100%;
     text-align: right;
     color: $banner-color;
     font-size: 30px;
-    border-bottom: 3px solid $banner-color;
+    border-bottom: 2px solid $banner-color;
 }
 
 @include breakpoint(mobile) {
