@@ -75,7 +75,7 @@ export default function Gallery(props: GalleryProps) {
             </div>
             <div className='gallery-body'>
                 {
-                    debounce(filterItems)(props.items).map((item: GalleryItem) => (
+                    filterItems(props.items).map((item: GalleryItem) => (
                         <div className='gallery-item a-fadein a-stagger' key={ item.imgUrl }>
                             <img
                                 className='gallery-item-thumbnail'
