@@ -1,5 +1,4 @@
 import { useState, ChangeEvent } from 'react';
-import debounce from 'lodash';
 
 
 type GalleryItem = {
@@ -48,9 +47,15 @@ export default function Gallery(props: GalleryProps) {
         return true;
     }
 
-    const filterItems = (items: GalleryItem[]) => {
-        return items.filter(filterTags);
+    const debounce = (callback: Function, wait: number = 300) => {
+        var timeout: ReturnType<typeof setTimeout>;
+        return (...args: any) => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => callback(...args), wait);
+        }
     }
+
+    const results = props.items.filter(filterTags);
 
     return (
         <div className='gallery-container'>
@@ -75,7 +80,7 @@ export default function Gallery(props: GalleryProps) {
             </div>
             <div className='gallery-body'>
                 {
-                    filterItems(props.items).map((item: GalleryItem) => (
+                    results.map((item: GalleryItem) => (
                         <div className='gallery-item a-fadein a-stagger' key={ item.imgUrl }>
                             <img
                                 className='gallery-item-thumbnail'
